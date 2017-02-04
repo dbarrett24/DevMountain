@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Candal|Paytone+One');
+
+body{
+    font-size: 32px;
+    font-weight: 400px;
+    font-family: Archivo Black;
+    color: #fff;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background: url("./html-css-assessment/img/main-bg.jpeg") no-repeat center;
+    background-size: cover;
+}
+.header{
+    width: 100%;
+    height: 100px;
+
+}
+
+.header-links{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+.header-link{
+    margin-top: 40px;
+    list-style: none;
+}
+
+.menu{
+    width: 75px;
+    height: 75px;
+    border-color: #fff;
+    border-radius: 50%;
+}
+
+.ham-menu{
+
+}
+
+.social-media{
+
+}
+/*-----------Middle--------------*/
+.hero-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title{
+
+    font-size: 120px;
+
+}
+
+.subtitle{
+
+}
+/*-----------BOTTOM--------------*/
+.scroll-down-button{
+    height: 65px;
+    width: 65px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 50%;
+}
+
+@media (max-width: 650px){
+    
+}
+@media (max-width: 840px){
+    .header-link{
+        display: none;
+    }
+}
+@media (max-width: 1200px){
+
+}

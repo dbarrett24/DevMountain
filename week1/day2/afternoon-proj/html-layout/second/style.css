@@ -1,0 +1,43 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.left {
+    width: 33%;
+    background-color: #4A90E2;
+}
+.middle {
+    width: 33%;
+    background-color: #50E3C2;
+}
+.right {
+    width: 100%;
+    height: 80vh;
+    background-color: #B8E986;
+    
+}
+.lr-content {
+    width: 100%;
+    height: 20vh;
+    background-color: red;
+    color: white;
+    text-align: center;
+    
+    font-size: 24px;
+    
+    
+}
+
+.right-container {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    padding-top: 35px;
+}

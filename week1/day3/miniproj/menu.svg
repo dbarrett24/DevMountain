@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-7-Plus" transform="translate(-20.000000, -19.000000)">
+            <g id="menu" transform="translate(20.000000, 19.000000)">
+                <rect id="Rectangle" fill="#000000" x="0" y="0" width="50" height="50"></rect>
+                <polygon id="Stroke-1" stroke-opacity="0.00784313771" stroke="#000000" stroke-width="0.5" points="9 9 41 9 41 41 9 41"></polygon>
+                <path d="M37,18.6 L13,18.6 C12.5584,18.6 12.2,18.2416 12.2,17.8 C12.2,17.3584 12.5584,17 13,17 L37,17 C37.4416014,17 37.8,17.3584 37.8,17.8 C37.8,18.2416 37.4415984,18.6 37,18.6 Z" id="Fill-2" fill="#FFFFFF"></path>
+                <path d="M37,26.6 L13,26.6 C12.5584,26.6 12.2,26.2416 12.2,25.8 C12.2,25.3583998 12.5584,25 13,25 L37,25 C37.4416014,25 37.8,25.3583998 37.8,25.8 C37.8,26.2416 37.4415984,26.6 37,26.6 Z" id="Fill-3" fill="#FFFFFF"></path>
+                <path d="M37,34.6 L13,34.6 C12.5584,34.6 12.2,34.2416 12.2,33.8 C12.2,33.3583998 12.5584,33 13,33 L37,33 C37.4416014,33 37.8,33.3583998 37.8,33.8 C37.8,34.2416 37.4415984,34.6 37,34.6 Z" id="Fill-4" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

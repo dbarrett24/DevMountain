@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="12px" viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Burger icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cover-9" transform="translate(-1122.000000, -67.000000)" fill="#FFFFFF">
+            <path d="M1141,74 L1123,74 C1122.45,74 1122,73.55 1122,73 C1122,72.45 1122.45,72 1123,72 L1141,72 C1141.55,72 1142,72.45 1142,73 C1142,73.55 1141.55,74 1141,74 L1141,74 Z M1141,69 L1123,69 C1122.45,69 1122,68.55 1122,68 C1122,67.45 1122.45,67 1123,67 L1141,67 C1141.55,67 1142,67.45 1142,68 C1142,68.55 1141.55,69 1141,69 L1141,69 Z M1123,77 L1141,77 C1141.55,77 1142,77.45 1142,78 C1142,78.55 1141.55,79 1141,79 L1123,79 C1122.45,79 1122,78.55 1122,78 C1122,77.45 1122.45,77 1123,77 L1123,77 Z" id="Burger-icon"></path>
+        </g>
+    </g>
+</svg>
