@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <title>Angular Friends</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-controller="FriendController">
+  <h1>The <strong>facebook</strong> Friend Machine</h1>
+
+  <div class="friends">
+    <form class="form-inline searchForm" role="form">
+      <div class="form-group">
+
+        <!--<input class="form-control" placeholder="Search Anything About Your Friends" ng-model="friendFilter">-->
+        <!-- STEP 5: Get rid of the one above when you uncomment the below-->
+          
+        <input class="form-control" placeholder="Search Name" ng-model="friendFilter.name">
+        <input class="form-control" placeholder="Search Location" ng-model="friendFilter.current_location.name">
+          
+        <select class="input-medium" ng-model="sortProp">
+          <option value="name">Name</option>
+          <option value="friend_count">#Friends</option>
+          <option value="current_location.city">City</option>
+          <option value="current_location.state">State</option>
+          <option value="current_location.country">Country</option>
+        </select>
+
+        <select class="input-medium" ng-model="sortDirection">
+          <option value="+">Descending</option>
+          <option value="-">Ascending</option>
+        </select>
+
+      </div>
+    </form>
+
+    <ul>
+      <li class='friend' ng-repeat="friend in friends | filter: friendFilter | orderBy: sortDirection + sortProp">
+        <img class="profile-pic" ng-src='{{friend.pic_square}}'>
+
+        <h3>{{friend.name}}</h3>
+
+        <div class="location">
+          Location: {{friend.current_location.city}}
+        </div>
+
+        <div class="status">
+          Status: {{friend.status.message}} <span class="hashtag">#ihateprovo</span>
+        </div>
+
+        <div class="num-friends">
+          Friends: {{friend.friend_count}}
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="FriendController.js"></script>
+</body>
+</html>
