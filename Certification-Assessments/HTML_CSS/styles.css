@@ -88,9 +88,15 @@ main{
     position: absolute;
     bottom: 25px;
     left: 48%;
-    
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.fa-long-arrow-down{
+    color: gray;
+}
+
 @media (min-width: 0px){
     .menu {
         display: flex;
