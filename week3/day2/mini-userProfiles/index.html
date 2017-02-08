@@ -11,7 +11,7 @@
         <img ng-src="{{user.avatar}}">
         {{user.first_name}}
         {{user.last_name}}
-        <button ng-click="toggleFavorite(user.id)">+</button>
+        <button ng-click="toggleFavorite($index)">+</button>
     </div>
     
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>

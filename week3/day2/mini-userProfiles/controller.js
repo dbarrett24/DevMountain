@@ -8,5 +8,6 @@ angular.module('userProfiles').controller('MainController', function($scope, mai
 
     $scope.getUsers();
    
-    $scope.toggleFavorite = mainService.toggleFavorite;
+    $scope.toggleFavorite = mainService.toggleFavorite; //NOT invoked! It is pointed to. The service runs it 
+    //when the user pushes the button. The controller's job isn't to RUN the functions, but to communicate between view and service.
 })
