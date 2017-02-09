@@ -1,0 +1,19 @@
+<html ng-app="apiApp">
+	<body ng-controller="mainCtrl">
+		{{test}}<br>
+		{{test1}}
+
+		<div ng-repeat="poke in pokemonArray">
+			<ul>
+				<h1>{{poke.name}}</h1>
+				<h3>Base XP: {{poke.base_experience}}</h3>
+				<h4>Abilities</h4>
+				<li ng-repeat="ability in poke.abilities">{{ability.ability.name}}</li>
+			</ul>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controller.js"></script>
+		<script src="service.js"></script>
+	</body>
+</html>
