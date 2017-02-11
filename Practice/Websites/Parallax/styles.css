@@ -1,0 +1,25 @@
+.cd-background-wrapper {
+    overflow: hidden;
+    perspective: 4000px;
+    
+}
+
+
+.cd-floating-background {
+    transform-style: preserve-3d;
+
+}
+
+.img1{
+    transform: translateZ(50px);
+}
+
+.img2{
+    transform: translateZ(290px);
+
+}
+
+.img3{
+    transform: translateZ(400px);
+
+}

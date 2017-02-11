@@ -1,7 +1,6 @@
 angular.module("apiApp").service("mainService", function($http){
     this.test1 = "Service is working";
 
-
    
     this.getData = function(num){
          var baseUrl = "http://pokeapi.co/api/v2/pokemon/"+ num +"/"
@@ -19,6 +18,7 @@ angular.module("apiApp").service("mainService", function($http){
     })
     
     }
+
 
 });
 
