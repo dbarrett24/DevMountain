@@ -8,13 +8,13 @@ jQuery(document).ready(function($){
 		aspectRatio;
 
 	//detect if hero <img> has been loaded and evaluate its aspect-ratio
-	$('.cd-floating-background').find('img').eq(0).load(function() {
-		aspectRatio = $(this).width()/$(this).height();
-  		if( $('html').hasClass('preserve-3d') ) initBackground();
-	}).each(function() {
-		//check if image was previously load - if yes, trigger load event
-  		if(this.complete) $(this).load();
-	});
+	// $('.cd-floating-background').find('img').eq(0).load(function() {
+	// 	aspectRatio = $(this).width()/$(this).height();
+  	// 	if( $('html').hasClass('preserve-3d') ) initBackground();
+	// }).each(function() {
+	// 	//check if image was previously load - if yes, trigger load event
+  	// 	if(this.complete) $(this).load();
+	// });
 	
 	//detect mouse movement
 	$('.cd-background-wrapper').each(function(){
@@ -73,10 +73,6 @@ jQuery(document).ready(function($){
 		if( rotateX < -maxRotationX ) rotateX = -maxRotationX;
 
 		$('.cd-floating-background').css({
-			'-moz-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
-		    '-webkit-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
-			'-ms-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
-			'-o-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
 			'transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
 		});
 	}

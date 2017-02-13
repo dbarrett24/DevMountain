@@ -120,6 +120,16 @@ body {
 		}
 
 	/* Compose Tweet */
+	.tweet-compose-2 {
+		width: 100%;
+		height: 2.5em;
+		font-size: 13px;
+		padding: 5px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		margin-bottom: 1em;
+		box-sizing: border-box;
+	}
 	.tweet-compose {
 		width: 100%;
 		height: 2.5em;
@@ -129,6 +139,7 @@ body {
 		border-radius: 3px;
 		margin-bottom: 1em;
 		box-sizing: border-box;
+	
 	}
 		#tweet-controls {
 			text-align: right;
@@ -171,6 +182,7 @@ body {
 
 	.tweet-actions {
 		text-align: right;
+		
 	}
 		.tweet-actions ul {
 			list-style-type: none;
