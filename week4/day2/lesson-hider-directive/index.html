@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <title>Lesson App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="css/style.css" rel="stylesheet">-->
+    </head>
+    <body ng-controller="lessonCtrl">
+    
+    
+    <ul>
+        <lesson-hider ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson, day)" removeItem="removeItem()"></lesson-hider>
+    </ul>
+    
+    <div>{{test}}</div>
+
+
+<!--ANGULAR-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+        
+<!--SCRIPTS-->
+        <script src="app.js"></script>
+
+
+<!--Controllers-->
+        <script src="./js/lessonCtrl.js"></script>
+
+<!--Services-->
+        <script src="./js/lessonService.js"></script>
+
+<!--Directives-->
+        <script src="./js/lessonHider.js"></script>
+    </body>
+</html>
