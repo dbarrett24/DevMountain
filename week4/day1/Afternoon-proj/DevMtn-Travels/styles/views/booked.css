@@ -1,0 +1,40 @@
+.booked-main-container {
+    width: 85%;
+    height: 350px;
+    margin: auto ;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:5px;
+    overflow: hidden;
+    position: absolute;
+    top: 350px;
+    left: calc(50% - 576px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 3px 38px 12px #FFF;
+    line-height: 60px;
+}
+
+.booked-main-container h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+
+}
+
+.booked-main-container img {
+    width: 100%;
+}
+
+.booked-main-container button {
+    width: 22%;
+    padding: 15px;
+    background: #ff4f4f;
+    font-size: 18px;
+    color: #FFFFFF;
+    border-radius: 10px;
+}

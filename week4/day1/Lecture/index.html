@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="css/style.css" rel="stylesheet">-->
+    </head>
+    <body ng-controller="mainCtrl">
+
+    {{test}}
+    <h1>Welcome to Melo Mania</h1>
+    <nav>
+        <a ui-sref="home">Home</a>
+        <a ui-sref="roster">Roster</a>
+        <a ui-sref="player">Players</a>
+       
+    </nav>
+    <ui-view>
+        <!--Don't put things HERE! They will be changed!-->
+    </ui-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="mainCtrl.js"></script>
+    <script src="player/playerService.js"></script>
+    <script src="/Home/homeCtrl.js"></script>
+    <script src="/Roster/rosterCtrl.js"></script>
+    <script src="/Player/playerCtrl.js"></script>
+
+    </body>
+</html>
