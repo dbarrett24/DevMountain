@@ -15,7 +15,7 @@ angular.module("app").controller("lessonCtrl", function($scope, lessonService){
     }
 
     $scope.removeItem = function(){
-        delete(lesson);
+        delete(lesson.lesson);
     }
 
 });

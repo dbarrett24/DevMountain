@@ -6,7 +6,8 @@ angular.module("app")
         templateUrl: "lessonHider.html",
         scope: {
             lesson: "=",
-            dayAlert: "&"
+            dayAlert: "&",
+            removeItem: "&"
             
         },
         link: function(scope, element, attrs){
@@ -20,7 +21,7 @@ angular.module("app")
                         return;
                     }
                     
-                })
+                });
 
                 
 
