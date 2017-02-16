@@ -5,4 +5,6 @@ angular.module("brawlApp").controller("mainCtrl", function($scope, mainService){
     // $scope.test1 = mainService.test1;
 // ***********************************   
 
+$scope.players = mainService.getPlayers();
+
 });

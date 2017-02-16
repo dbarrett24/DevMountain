@@ -1,0 +1,15 @@
+{
+  "name": "gulp-es6-demo",
+  "version": "1.0.0",
+  "description": "Create an Angular application that uses routes to navigate through a travel site. You will be able to use routes and sub routes by the end of this project.\r In this repo, you'll continue to practice fundamental Angular principles you've learned like controller and services.",
+  "main": "gulpFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  }
+}
