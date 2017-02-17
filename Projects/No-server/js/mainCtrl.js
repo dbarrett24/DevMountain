@@ -8,3 +8,4 @@ angular.module("brawlApp").controller("mainCtrl", function($scope, mainService){
 // $scope.players = mainService.getPlayers();
 
 });
+

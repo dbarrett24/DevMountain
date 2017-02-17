@@ -1,5 +1,15 @@
 angular.module("brawlApp", ["ui.router"])
     .config(function($stateProvider, $urlRouterProvider){
+        // var mainState = {
+        //     name: 'main',
+        //     views: {
+        //         header: 'headerComponent',
+        //         header2: "header2",
+        //         nav: 'navComponent',
+        //         content: 'mainComponent',
+        //     }
+        // };
+        
         $stateProvider
             .state('team-select', {
                 url: '/',
