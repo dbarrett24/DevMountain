@@ -1,0 +1,11 @@
+.main-header-1{
+    width: 100%;
+    background: url("../../images/Background/black background.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+    height: auto;
+}

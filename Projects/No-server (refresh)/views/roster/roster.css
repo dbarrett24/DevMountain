@@ -1,0 +1,35 @@
+.roster-table{
+    width: 100%;
+    height: 34px;
+    background-color: #BDBDBD;
+    color: black;
+    font-size: 14px;
+}
+.player-with-stats{
+    width: 100%;
+    height: 5%;
+    background-color: #E4E2E2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3px;
+    
+}
+ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    font-family: "Roboto-Regular";
+}
+
+.add-player-btn{
+    border-radius: 15px;
+    background-color: #27AF81;
+    border: none;
+    padding: 7px 13px;
+    color: #fff;
+    font-family: "Roboto-Regular";
+}

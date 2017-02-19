@@ -1,0 +1,40 @@
+
+<section ng-controller="rosterCtrl">
+    <div class="roster-table-headings"></div>
+<!--{{test1}}-->
+    <section class="roster-table">
+         <ul>
+            <li><strong>Player Name</strong></li>
+            <li><strong>Team</strong></li>
+            <li><strong>Position</strong></li>
+            <li><strong>Years in NBA</strong></li>
+            <li><strong>Def Reb.</strong></li>
+            <li><strong>Off Reb.</strong></li>
+            <li><strong>Assists</strong></li>
+            <li><strong>Stls</strong></li>
+            <li><strong>Blk</strong></li>
+            <li><strong>+/-</strong></li>
+            <li><strong>FG%</strong></li>
+            <li><strong>Avg. PPG</strong></li>
+        </ul>
+    </section>
+        <div class="player-with-stats">
+            <ul>
+                <li>{{player.name}}</li>
+                <li>{{player.team}}</li>
+                <li>{{player.position_abbreviation}}</li>
+                <li>{{player.years_of_experience}}</li>
+                <li>{{player.defrebounds}}</li>
+                <li>{{player.offrebounds}}</li>
+                <li>{{player.assists}}</li>
+                <li>{{player.stls}}</li>
+                <li>{{player.blk}}</li>
+                <li>{{player.plus_minus}}</li>
+                <li>{{player.fg_prcnt}}</li>
+                <li>{{player.PPG}}</li>
+            </ul>
+            <button class="add-player-btn">Add Player 1</button>
+            <button class="add-player-btn">Add Player 2</button>
+        </div>
+    
+</section>
