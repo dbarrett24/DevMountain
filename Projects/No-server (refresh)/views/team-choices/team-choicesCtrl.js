@@ -1,4 +1,4 @@
-angular.module("brawlApp").controller("team-selectCtrl", function($scope, mainService){
+angular.module("brawlApp").controller("team-choicesCtrl", function($scope, mainService){
     $(document).ready(function(){
         $('.carousel-wrapper').slick({
             infinite: true,

@@ -14,10 +14,13 @@
 
         <!--Directive StyleSheets-->
         <link href="./directives/footer/footerDir.css" rel="stylesheet">
-        <link href="./directives/header/headerDir.css" rel="stylesheet">
         <link href="./directives/nav/navDir.css" rel="stylesheet">
+        
         <!--View StyleSheets-->
-        <link href="./views/team-select/team-select.css" rel="stylesheet">
+        <link href="./views/home-header/home-header.css" rel="stylesheet">
+        <link href="./views/player-header/player-header.css" rel="stylesheet">
+
+        <link href="./views/team-choices/team-choices.css" rel="stylesheet">
         <link href="./views/roster/roster.css" rel="stylesheet">
 
     </head>
@@ -41,11 +44,13 @@
 <!--***********************************-->
     <main role="main">
         
-        <header-dir></header-dir>
+        <ui-view name="home-header"></ui-view>
+        <ui-view name="player-header"></ui-view>
 
         <nav-dir></nav-dir>
 
-        <ui-view></ui-view>
+        <ui-view name="team-choices"></ui-view>
+        <ui-view name="roster"></ui-view>
 
         <footer-dir></footer-dir>
             
@@ -67,11 +72,12 @@
 
         <!--Directives-->
         <script src="./directives/footer/footerDir.js"></script>
-        <script src="./directives/header/headerDir.js"></script>
         <script src="./directives/nav/navDir.js"></script>
         
         <!--Views-->
-        <script src="./views/team-select/team-selectCtrl.js"></script>
+        <script src="./views/player-header/player-headerCtrl.js"></script>
+
+        <script src="./views/team-choices/team-choicesCtrl.js"></script>
         <script src="./views/roster/rosterCtrl.js"></script>
 
 

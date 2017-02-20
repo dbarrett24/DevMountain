@@ -11,14 +11,43 @@ angular.module("brawlApp", ["ui.router"])
         // };
         
         $stateProvider
-            .state('team-select', {
+            .state('home', {
                 url: '/',
-                templateUrl: "../views/team-select/team-select.html"
+                views:{
+                    'home-header':{
+                        templateUrl: "../views/home-header/home-header.html"
+                    },
+                    'team-choices':{
+                        templateUrl: "../views/team-choices/team-choices.html",
+                        controller: "team-choicesCtrl"
+                    }
+                }
             })
-            .state('roster', {
-                url: '/roster',
-                templateUrl: '../views/roster/roster.html',
-                controller: "rosterCtrl"
+            .state('team-select', {
+                url: '/team-select',
+                views:{
+                    'player-header':{
+                        templateUrl: "../views/home-header/home-header.html",
+                        controller: "player-headerCtrl"
+                    },
+                    'team-choices':{
+                        templateUrl: "../views/team-choices/team-choices.html",
+                        controller: "team-choicesCtrl"
+                    }
+                }
+            })
+            .state('team-roster', {
+                url: '/team-roster',
+                views:{
+                    'player-header':{
+                        templateUrl: "../views/home-header/home-header.html",
+                        controller: "player-headerCtrl"
+                    },
+                    'roster':{
+                        templateUrl: "../views/roster/roster.html",
+                        controller: "rosterCtrl"
+                    }
+                }
             })
             // .state('fight', {
             //     url: '/fight/:id',

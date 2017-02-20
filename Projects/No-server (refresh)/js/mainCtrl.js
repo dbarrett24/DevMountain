@@ -11,18 +11,8 @@ angular.module("brawlApp").controller("mainCtrl", function($scope, mainService){
         });
     };
 
-    $scope.getPlayerStats = function(){
-        mainService.getPlayersStats().then(function(playerStats){
-            $scope.playerStats = playerStats.player_season_stats;
-            console.log($scope.playerStats);
-        });
-    };
-    $scope.getRosters = function(){
-        mainService.getRosters().then(function(rosters){
-            $scope.rosters = rosters;
-            console.log($scope.rosters);
-        });
-    };
+    
+    
     $scope.getTeams = function(){
         mainService.getTeams().then(function(teams){
             $scope.teams = teams;
@@ -32,8 +22,6 @@ angular.module("brawlApp").controller("mainCtrl", function($scope, mainService){
 
     var onStartUp = function(){
         $scope.getPlayers();
-        $scope.getPlayerStats();
-        $scope.getRosters();
         $scope.getTeams();
     };
     onStartUp();
