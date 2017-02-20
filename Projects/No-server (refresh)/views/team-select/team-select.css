@@ -11,9 +11,26 @@
     align-items: center;
     margin: 60px;
 }
+
 .card{
     height: 48vh;
     background: #C9C9C9;
     border-radius: 15px;
     margin: 10px 25px;
+    text-align: center;
+    transition: all .4s, ease-out;
+}
+.card:hover{
+    text-align: center;
+    transform: scale(1.025);
+    z-index: 2;
+    box-shadow: -2px 3px 13px 1px darkslategrey;
+    border:2px solid white;
+    transition: all .4s, ease-out;
+}
+.card img{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 125px;
 }
