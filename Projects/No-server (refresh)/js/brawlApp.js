@@ -27,7 +27,7 @@ angular.module("brawlApp", ["ui.router"])
                 url: '/team-select',
                 views:{
                     'player-header':{
-                        templateUrl: "../views/home-header/home-header.html",
+                        templateUrl: "../views/player-header/player-header.html",
                         controller: "player-headerCtrl"
                     },
                     'team-choices':{
@@ -37,15 +37,15 @@ angular.module("brawlApp", ["ui.router"])
                 }
             })
             .state('team-roster', {
-                url: '/team-roster',
+                url: '/team-roster/:team_id',
                 views:{
                     'player-header':{
-                        templateUrl: "../views/home-header/home-header.html",
+                        templateUrl: "../views/player-header/player-header.html",
                         controller: "player-headerCtrl"
                     },
                     'roster':{
                         templateUrl: "../views/roster/roster.html",
-                        controller: "rosterCtrl"
+                        
                     }
                 }
             })

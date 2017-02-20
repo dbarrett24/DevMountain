@@ -1,6 +1,7 @@
 angular.module('devmtnTravel').service('mainSrv', function(){
 
-    this.travelInfo = [{
+    this.travelInfo = [
+    {
         city: 'New York',
         country: 'United States',
         image: "../img/NewYork.jpg",

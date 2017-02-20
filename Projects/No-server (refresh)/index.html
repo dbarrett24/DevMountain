@@ -45,12 +45,12 @@
     <main role="main">
         
         <ui-view name="home-header"></ui-view>
-        <ui-view name="player-header"></ui-view>
+        <ui-view name="player-header" ng-controller="player-headerCtrl"></ui-view>
 
         <nav-dir></nav-dir>
 
-        <ui-view name="team-choices"></ui-view>
-        <ui-view name="roster"></ui-view>
+        <ui-view name="team-choices" ng-controller="team-choicesCtrl"></ui-view>
+        <ui-view name="roster" ng-controller="rosterCtrl"></ui-view>
 
         <footer-dir></footer-dir>
             

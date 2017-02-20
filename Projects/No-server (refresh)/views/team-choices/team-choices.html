@@ -1,9 +1,9 @@
 <h1 class="choose-a-team">Choose a Team.</h1>
 
 <!--Carousal-->
-<div class="carousel-wrapper" ng-controller="team-choicesCtrl">
-  <!--//ui-sref to team-roster id-->
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/at-hawks01.png" id="hawks"></div></a>
+<div class="carousel-wrapper">
+  <!--//ui-sref to team-roster team_id-->
+  <a ui-sref="team-roster({team_id: {{teamSlug}} })"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/at-hawks01.png" id="hawks"></div></a>
   <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/celtics.png" id="celtics"></div></a>
   <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/nets.png" id="nets"></div></a>
   <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/hornets.png" id="hornets"></div></a>
@@ -33,5 +33,4 @@
   <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/raptors.png" id="raptors"></div></a>
   <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/jazz.png" id="jazz"></div></a>
   <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/wizards.png" id="wizards"></div></a>
-  
 </div>
