@@ -12,8 +12,8 @@ angular.module("brawlApp").controller("rosterCtrl", function($scope, mainService
 
 // Functions
     // GET DATA
-    $scope.getRosters = function(){
-        mainService.getRosters().then(function(rosters){
+    $scope.getRosters = function(team){
+        mainService.getRosters(team).then(function(rosters){
             $scope.rosters = rosters;
             console.log($scope.rosters);
         });
@@ -21,7 +21,7 @@ angular.module("brawlApp").controller("rosterCtrl", function($scope, mainService
     $scope.getPlayerStats = function(){
         mainService.getPlayersStats().then(function(playerStats){
             $scope.playerStats = playerStats.player_season_stats;
-            console.log($scope.playerStats);
+            // console.log($scope.playerStats);
         });
     };
 // Invoked on Startup

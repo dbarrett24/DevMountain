@@ -18,10 +18,10 @@
             <li><strong>Avg. PPG</strong></li>
         </ul>
     </section>
-        <div class="player-with-stats">
+        <div class="player-with-stats" ng-repeat="player in rosters.players">
             <ul>
                 <li>{{player.name}}</li>
-                <li>{{player.team}}</li>
+                <li>{{player.team_id}}</li>
                 <li>{{player.position_abbreviation}}</li>
                 <li>{{player.years_of_experience}}</li>
                 <li>{{player.defrebounds}}</li>
