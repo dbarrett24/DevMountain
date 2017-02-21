@@ -1,29 +1,81 @@
+
 .roster-table{
+    position: fixed;
     width: 100%;
-    height: 34px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    top: 232px;
+}
+.roster-wrapper{
+    width: 100%;
+    height: 100%;
     background-color: #BDBDBD;
     color: black;
     font-size: 14px;
+    font-family: "Roboto-Regular";
 }
+th{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 12px 3px 3px 3px;
+    text-align: center;
+    /*border: 1px solid black;*/
+}
+.name1-h{
+    padding: 12px 3px 3px 3px;
+    margin-left: 30px;
+    text-align: left;
+}
+.player-data-area{
+    width: 100%;
+    height: 33vh;
+}
+
 .player-with-stats{
     width: 100%;
     height: 5%;
     background-color: #E4E2E2;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 3px;
-    
+    font-family: "Roboto-Regular";
 }
-ul{
+
+table{
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid black;*/
+}
+tr{
+    width: auto;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-    list-style: none;
-    font-family: "Roboto-Regular";
+    
 }
+td{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    text-align: center;
+    /*border: 1px solid black;*/
+}
+.name1{
+    padding: 3px;
+    margin-left: 30px;
+    text-align: left;
+}
+.button-pos{
+    padding: 3px;
+    text-align: right;
+
+}
+
 
 .add-player-btn{
     border-radius: 15px;
@@ -32,4 +84,44 @@ ul{
     padding: 7px 13px;
     color: #fff;
     font-family: "Roboto-Regular";
+    
+}
+.add-player-btn2{
+    border-radius: 15px;
+    background-color: #27AF81;
+    border: none;
+    padding: 7px 13px;
+    color: #fff;
+    font-family: "Roboto-Regular";
+    margin-right: 20px;
+    
+}
+.add-player-btn:hover{
+    border-radius: 15px;
+    background-color: #089161;
+    border: none;
+    padding: 7px 13px;
+    color: #fff;
+    font-family: "Roboto-Regular";
+    transform: scale(1.025);
+    
+}
+.add-player-btn2:hover{
+    border-radius: 15px;
+    background-color: #089161;
+    border: none;
+    padding: 7px 13px;
+    color: #fff;
+    font-family: "Roboto-Regular";
+    margin-right: 20px;
+    transform: scale(1.025);
+    
+}
+.add-player-btn:focus{
+    outline: none;
+    
+}
+.add-player-btn2:focus{
+    outline: none;
+    
 }

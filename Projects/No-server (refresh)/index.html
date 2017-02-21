@@ -15,6 +15,7 @@
         <!--Directive StyleSheets-->
         <link href="./directives/footer/footerDir.css" rel="stylesheet">
         <link href="./directives/nav/navDir.css" rel="stylesheet">
+        <link href="./directives/table-head-dir/table-head-dir.css" rel="stylesheet">
         
         <!--View StyleSheets-->
         <link href="./views/home-header/home-header.css" rel="stylesheet">
@@ -31,30 +32,22 @@
         <!--{{test}}<br>
         {{test1}}<br>-->
     
-        <!--<ul>
-            <li>{{players[1].name}}</li>
-            <li>{{rosters.players[0].name}}</li>
-            <li>{{player_season_statstotal_assists}}</li>
-            <li>{{teams.teams[0].name}}</li>
-        </ul>-->
-        <!--{{players.roster}}
-        {{playerStats}}
-        {{rosters}}
-        {{teams}}-->
 <!--***********************************-->
     <main role="main">
-        
+        <!--<ui-view></ui-view>-->
         <ui-view name="home-header"></ui-view>
-        <ui-view name="player-header" ng-controller="player-headerCtrl"></ui-view>
+        <ui-view name="player-header"></ui-view>
 
-        <nav-dir></nav-dir>
+        
 
-        <ui-view name="team-choices" ng-controller="team-choicesCtrl"></ui-view>
-        <ui-view name="roster" ng-controller="rosterCtrl"></ui-view>
+        <ui-view name="team-choices"></ui-view>
+        <ui-view name="roster"></ui-view>
 
         <footer-dir></footer-dir>
-            
         
+        
+       
+       
     </main>
 
 <!--Angular, JQuery, Bootstrap, UI-Router-->
@@ -73,6 +66,7 @@
         <!--Directives-->
         <script src="./directives/footer/footerDir.js"></script>
         <script src="./directives/nav/navDir.js"></script>
+        <script src="./directives/table-head-dir/table-head-dir.js"></script>
         
         <!--Views-->
         <script src="./views/player-header/player-headerCtrl.js"></script>

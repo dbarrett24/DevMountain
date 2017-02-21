@@ -13,6 +13,8 @@ angular.module("brawlApp", ["ui.router"])
         $stateProvider
             .state('home', {
                 url: '/',
+                // templateUrl: "../views/home/home.html",
+                // abstract: true,
                 views:{
                     'home-header':{
                         templateUrl: "../views/home-header/home-header.html"
@@ -25,6 +27,7 @@ angular.module("brawlApp", ["ui.router"])
             })
             .state('team-select', {
                 url: '/team-select',
+                // templateUrl: "../views/team-choices/team-choices.html",
                 views:{
                     'player-header':{
                         templateUrl: "../views/player-header/player-header.html",
@@ -37,14 +40,16 @@ angular.module("brawlApp", ["ui.router"])
                 }
             })
             .state('team-roster', {
-                url: '/team-roster/:team_id',
+                url: '/team-roster/:teamId',
                 views:{
                     'player-header':{
                         templateUrl: "../views/player-header/player-header.html",
                         controller: "player-headerCtrl"
+                        
                     },
                     'roster':{
                         templateUrl: "../views/roster/roster.html",
+                        controller: "rosterCtrl"
                         
                     }
                 }

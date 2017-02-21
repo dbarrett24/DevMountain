@@ -1,8 +1,14 @@
+.nav-dir{
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+
+}
 .player-header-1{
     width: 100%;
     height: 30vh;
     background: url("../../images/Background/black background.png");
-    
+    position: fixed;
     
 }
 .logo-2{
@@ -11,4 +17,58 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+.selectPlayer{
+    color: gray;
+    font-family: "Roboto-Regular";
+    font-size: 26px;
+}
+.player-heads{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+}
+.portrait-wrapper-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.portrait-wrapper-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.player-portrait-1{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.player-portrait-2{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/*.team-logo-bg{
+    width: 100%;
+    height: 100%;
+}*/
+
+.roster-logo{
+
 }

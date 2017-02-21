@@ -2,39 +2,32 @@
 <section ng-controller="rosterCtrl">
     <div class="roster-table-headings"></div>
 <!--{{test1}}-->
-    <section class="roster-table">
-         <ul>
-            <li><strong>Player Name</strong></li>
-            <li><strong>Team</strong></li>
-            <li><strong>Position</strong></li>
-            <li><strong>Years in NBA</strong></li>
-            <li><strong>Def Reb.</strong></li>
-            <li><strong>Off Reb.</strong></li>
-            <li><strong>Assists</strong></li>
-            <li><strong>Stls</strong></li>
-            <li><strong>Blk</strong></li>
-            <li><strong>+/-</strong></li>
-            <li><strong>FG%</strong></li>
-            <li><strong>Avg. PPG</strong></li>
-        </ul>
-    </section>
-        <div class="player-with-stats" ng-repeat="player in rosters">
-            <ul>
-                <li>{{player.name}}</li>
-                <li>{{player.team_id}}</li>
-                <li>{{player.position_abbreviation}}</li>
-                <li>{{player.years_of_experience}}</li>
-                <li>{{player.defrebounds}}</li>
-                <li>{{player.offrebounds}}</li>
-                <li>{{player.assists}}</li>
-                <li>{{player.stls}}</li>
-                <li>{{player.blk}}</li>
-                <li>{{player.plus_minus}}</li>
-                <li>{{player.fg_prcnt}}</li>
-                <li>{{player.PPG}}</li>
-            </ul>
-            <button class="add-player-btn" ng-click="addLeft()">Add Player 1</button>
-            <button class="add-player-btn" ng-click="addRight()">Add Player 2</button>
+    
+    <section class="player-data-area"></section>
+         
+
+            <div class="player-with-stats" ng-repeat="player in players">
+            <table>
+                <tr>
+                    <td class="name1">{{player.name}}</td>
+                    <td><img ng-src="{{}}"></td>
+                    <td>{{player.position_abbreviation}}</td>
+                    <td>{{player.years_of_experience}}</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>212</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td class="button-pos"><button class="add-player-btn" ng-click="addLeft()">Add Player 1</button></td>
+                    <td class="button-pos"><button class="add-player-btn2" ng-click="addRight()">Add Player 2</button></td>
+                    
+            
+                </tr>
+            </table>
         </div>
+    
     
 </section>

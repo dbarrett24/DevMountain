@@ -1,6 +1,6 @@
 angular.module("brawlApp").controller("rosterCtrl", function($scope, mainService, $stateParams){
     // $scope.test1 = "RosterCTRL WORKING";
-    
+    console.log("rosterCtrl");
     
     var leftPlayer = [];
     var rightPlayer = [];
@@ -22,34 +22,29 @@ angular.module("brawlApp").controller("rosterCtrl", function($scope, mainService
         });
     };
     
-    $scope.getTeams = function(){
-        mainService.getTeams().then(function(teams){
-            $scope.teams = teams;
-            console.log($scope.teams);
-        });
-    };
-    $scope.getTeams();
-    var teams = $scope.teams;
-    console.log($scope.teams);
+        mainService.getTeams()
+            .then(function(teamData){
+                $scope.teamData = teamData;
+                console.log($scope.teams);
 
-// Invoked on Startup
-    // GET DATA
-    // Pass in teamSlug to retrieve specific team's roster data
-    for(var i = 0; i < teams.length; i++){
-        for(var prop in teams[i]){
-            if($stateParams.team_id === teams[i][prop]){
-                var teamSlug = teams[i].slug;
-                $scope.teamSlug = teams[i].slug;
-                $scope.getRosters(teamSlug);
-            }
-        }
-    }
-      
+                var team = teamData.find(function(team){
+                    return team.slug === $stateParams.teamId;
+                });
 
-   
+                if(team) {
+                    $scope.teamSlug = team.slug;
+                    $scope.getRosters(team.slug);
+                } else {
+                    return 'nba-ny';
+                }
 
+                return team.slug;
+            })
+            .then(mainService.getRosters)
+            .then(function(teamRoster){
+               $scope.players = teamRoster.players;
+            })
 
-// Get roster of team id
 
 
 

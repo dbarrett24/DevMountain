@@ -3,34 +3,71 @@
 <!--Carousal-->
 <div class="carousel-wrapper">
   <!--//ui-sref to team-roster team_id-->
-  <a ui-sref="team-roster({team_id: {{teamSlug}} })"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/at-hawks01.png" id="hawks"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/celtics.png" id="celtics"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/nets.png" id="nets"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/hornets.png" id="hornets"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/bulls.png" id="bulls"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/cavs.png" id="cavs"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/mavs.png" id="mavs"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/denver.png" id="nuggets"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/pistons.png" id="pistons"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/warriors.png" id="warriors"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/rockets.png" id="rockets"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/pacers.png" id="pacers"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/clippers.png" id="clippers"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/lakers.png" id="lakers"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/grizzlies.png" id="grizzlies"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/heat.png" id="heat"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/bucks.png" id="bucks"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/t-wolves.png" id="timberwolves"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/pelicans.png" id="pelicans"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/knicks.png" id="knicks"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/thunder.png" id="thunder"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/magic.png" id="magic"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/sixers.png" id="sixers"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/phoenixsuns.png" id="suns"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/trail-blazers01.png" id="trailblazers"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/kings.png" id="kings"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/spurs.png" id="spurs"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/raptors.png" id="raptors"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/jazz.png" id="jazz"></div></a>
-  <a ui-sref="team-roster"><div class="card"><img src="../images/TeamLogos-Edited/Card-Size/wizards.png" id="wizards"></div></a>
+  <!--<div class="card" ng-repeat="team in teamData">
+    <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })">
+     <img ng-src="{{team.logo}}">
+    </a>
+  </div>-->
+  <div class="card" ng-repeat="teamData in teamData"><a ui-sref="team-roster({teamId: '{{teamData.slug}}' })"><img ng-src="{{teamData.logo}}"><p>{{teamData.name}}</p></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[1].slug}}' })"><img ng-src="{{teamData[1].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[2].slug}}' })"><img ng-src="{{teamData[2].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[3].slug}}' })"><img ng-src="{{teamData[3].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[4].slug}}' })"><img ng-src="{{teamData[4].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[5].slug}}' })"><img ng-src="{{teamData[5].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[6].slug}}' })"><img ng-src="{{teamData[6].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[7].slug}}' })"><img ng-src="{{teamData[7].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[8].slug}}' })"><img ng-src="{{teamData[8].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[9].slug}}' })"><img ng-src="{{teamData[9].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[10].slug}}' })"><img ng-src="{{teamData[10].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[11].slug}}' })"><img ng-src="{{teamData[11].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[12].slug}}' })"><img ng-src="{{teamData[12].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[13].slug}}' })"><img ng-src="{{teamData[13].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[14].slug}}' })"><img ng-src="{{teamData[14].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[15].slug}}' })"><img ng-src="{{teamData[15].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[16].slug}}' })"><img ng-src="{{teamData[16].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[17].slug}}' })"><img ng-src="{{teamData[17].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[18].slug}}' })"><img ng-src="{{teamData[18].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[19].slug}}' })"><img ng-src="{{teamData[19].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[20].slug}}' })"><img ng-src="{{teamData[20].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[21].slug}}' })"><img ng-src="{{teamData[21].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[22].slug}}' })"><img ng-src="{{teamData[22].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[23].slug}}' })"><img ng-src="{{teamData[23].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[24].slug}}' })"><img ng-src="{{teamData[24].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[25].slug}}' })"><img ng-src="{{teamData[25].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[26].slug}}' })"><img ng-src="{{teamData[26].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[28].slug}}' })"><img ng-src="{{teamData[28].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[27].slug}}' })"><img ng-src="{{teamData[27].logo}}"></a></div>
+  <div class="card"><a ui-sref="team-roster({teamId: '{{teamData[29].slug}}' })"><img ng-src="{{teamData[29].logo}}"></a></div>
+
+
+  
+  <!--<a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>
+  <a ui-sref="home.team-roster({teamId: '{{team.slug}}' })"><img ng-src="{{team.logo}}"></a>-->
 </div>
+<!--ng-repeat="team in teamData"-->
