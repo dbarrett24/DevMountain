@@ -1,0 +1,18 @@
+.home-header-wrapper{
+    width: 100%;
+    height: auto;
+}
+.home-nav{
+    width: 100%;
+}
+.main-header-1{
+    width: 100%;
+    background: url("../../images/Background/black background.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    height: auto;
+}

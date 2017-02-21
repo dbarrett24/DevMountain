@@ -1,0 +1,153 @@
+[
+  {
+    "name": "Hawks",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/hawks.svg",
+    "slug": "nba-atl"
+  },
+  {
+    "name": "76ers",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/sixers.svg",
+    "slug": "nba-phi"
+  },
+  {
+    "name": "Bucks",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/bucks.svg",
+    "slug": "nba-mil"
+  },
+  {
+    "name": "Bulls",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/bulls.svg",
+    "slug": "nba-chi"
+  },
+  {
+    "name": "Cavs",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/cavs.svg",
+    "slug": "nba-cle"
+  },
+  {
+    "name": "Celtics",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/celtics.svg",
+    "slug": "nba-bos"
+  },
+  {
+    "name": "Clippers",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/clippers.svg",
+    "slug": "nba-lac"
+  },
+  {
+    "name": "Grizzlies",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/grizzlies.svg",
+    "slug": "nba-mem"
+  },
+  {
+    "name": "Heat",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/heat.svg",
+    "slug": "nba-mia"
+  },
+  {
+    "name": "Hornets",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/hornets.svg",
+    "slug": "nba-cha"
+  },
+  {
+    "name": "Jazz",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/jazz.svg",
+    "slug": "nba-uta"
+  },
+  {
+    "name": "Kings",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/kings.svg",
+    "slug": "nba-sac"
+  },
+  {
+    "name": "Knicks",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/knicks.svg",
+    "slug": "nba-ny"
+  },
+  {
+    "name": "Lakers",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/lakers.svg",
+    "slug": "nba-lal"
+  },
+  {
+    "name": "Magic",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/magic.svg",
+    "slug": "nba-orl"
+  },
+  {
+    "name": "Mavs",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/mavs.svg",
+    "slug": "nba-dal"
+  },
+  {
+    "name": "Nets",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/nets.svg",
+    "slug": "nba-bk"
+  },
+  {
+    "name": "Nuggets",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/nuggets.svg",
+    "slug": "nba-den"
+  },
+  {
+    "name": "Pacers",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/pacers.svg",
+    "slug": "nba-ind"
+  },
+  {
+    "name": "Pelicans",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/pelicans.svg",
+    "slug": "nba-no"
+  },
+  {
+    "name": "Pistons",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/pistons.svg",
+    "slug": "nba-det"
+  },
+  {
+    "name": "Raptors",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/raptors.svg",
+    "slug": "nba-tor"
+  },
+  {
+    "name": "Rockets",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/rockets.svg",
+    "slug": "nba-hou"
+  },
+  {
+    "name": "Spurs",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/spurs.svg",
+    "slug": "nba-sa"
+  },
+  {
+    "name": "Suns",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/suns.svg",
+    "slug": "nba-pho"
+  },
+  {
+    "name": "Thunder",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/thunder.svg",
+    "slug": "nba-okc"
+  },
+  {
+    "name": "T-wolves",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/wolves.svg",
+    "slug": "nba-min"
+  },
+  {
+    "name": "Warriors",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/warriors.svg",
+    "slug": "nba-gs"
+  },
+  {
+    "name": "Blazers",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/trailblazers.svg",
+    "slug": "nba-por"
+  },
+  {
+    "name": "Wizards",
+    "logo": "../images/TeamLogos-Edited/Roster-Size/wizards.svg",
+    "slug": "nba-was"
+  }
+  
+]
