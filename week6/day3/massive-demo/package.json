@@ -1,0 +1,23 @@
+{
+  "name": "massive-demo",
+  "version": "1.0.0",
+  "description": "Learn to access Postgres via massive-js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dallincrane/mini-birds-mongojs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/kendagriff/massive-demo",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "massive": "2.4.0"
+  }
+}
