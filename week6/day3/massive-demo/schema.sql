@@ -1,9 +1,5 @@
 -- Create an affected_areas table
-CREATE TABLE affected_areas
-(
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(40)
-);
+w
 
 INSERT INTO affected_areas (id, name) VALUES (1, 'Groin');
 INSERT INTO affected_areas (id, name) VALUES (2, 'Neck');
