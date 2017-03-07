@@ -1,0 +1,7 @@
+{
+    'presets': [
+        'react'
+    ]
+}
+
+//when run, this helps transform all .jsx from REACT to .js
