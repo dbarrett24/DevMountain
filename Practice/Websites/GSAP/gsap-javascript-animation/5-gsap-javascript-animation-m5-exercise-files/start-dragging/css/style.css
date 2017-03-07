@@ -1,0 +1,118 @@
+/**
+ * Created by toddshelton on 11/19/15.
+ */
+@font-face {
+    src: url(fonts/Asap-Regular.ttf);
+    font-family: ASAP;
+}
+
+@font-face {
+    src: url(fonts/Asap-Bold.ttf);
+    font-family: ASAP_BOLD;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 24px;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.mainTitle {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-size: 36px;
+    font-family: ASAP_BOLD;
+}
+
+.greenText {
+    color: #88ce02;
+}
+
+.asapReg {
+    font-family: ASAP;
+    color: #fff;
+}
+
+.centerVertically {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.container-wrapper {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.gridContainer {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 90%;
+}
+
+.gridRows {
+    position: relative;
+    height: 25%;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.gridBox {
+    position: relative;
+    border: solid 1px #e9e4e8;
+    height: 100%;
+    width: 25%;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.gridBox img {
+    height: 90%;
+    max-width: 90%;
+    margin: auto;
+}
+
+.gridBoxImage {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.gridBoxImage img {
+    height: 90%;
+    max-width: 90%;
+    margin: auto;
+}
+
+.gridBoxTopLeft {
+    border-radius: 10px 0 0 0;
+}
+
+.gridBoxTopRight {
+    border-radius: 0 10px 0 0;
+}
+
+.gridBoxBottomLeft {
+    border-radius: 0 0 0 10px;
+}
+
+.gridBoxBottomRight {
+    border-radius: 0 0 10px 0;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draggable Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="mainTitle"><span class="asapReg">Green</span><span class="greenText"> Sock</span>
+
+    <span class="greenText">Draggable</span>
+</div>
+
+<!--Grid that holds tools and drop areas-->
+<div class="container-wrapper">
+    <section class="gridContainer">
+        <!--Grid Top Row-->
+        <section class="gridRows">
+            <section class="gridBox gridBoxTopLeft">
+                <section class="moveAble gridBoxImage sh">
+                    <img src="images/gsap-superhero.svg">
+                </section>
+            </section>
+            <section class="gridBox"></section>
+            <section class="gridBox"></section>
+            <section class="gridBox gridBoxTopRight"></section>
+        </section>
+
+        <!--Grid Middle Top Row-->
+        <section class="gridRows">
+            <section class="gridBox">
+                <section class="moveAble gridBoxImage lf">
+                    <img src="images/leaf.png">
+                </section>
+            </section>
+            <section class="gridBox"></section>
+            <section class="gridBox"></section>
+            <section class="gridBox"></section>
+        </section>
+
+        <!--Grid Middle Bottom Row-->
+        <section class="gridRows">
+            <section class="gridBox">
+                <section class="moveAble gridBoxImage wl">
+                    <img src="images/weight-lifter.svg">
+                </section>
+            </section>
+            <section class="gridBox"></section>
+            <section class="gridBox"></section>
+            <section class="gridBox"></section>
+        </section>
+
+        <!--Grid Bottom Row-->
+        <section class="gridRows">
+            <section class="gridBox gridBoxBottomLeft tb">
+                <section class="moveAble gridBoxImage">
+                    <img src="images/tool-box.png">
+                </section>
+            </section>
+            <section class="gridBox"></section>
+            <section class="gridBox"></section>
+            <section class="gridBox gridBoxBottomRight"></section>
+        </section>
+    </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/utils/Draggable.min.js"></script>
+<script src="vendor/ThrowPropsPlugin.min.js"></script>
+<script src="app/app.js"></script>
+
+</body>
+</html>

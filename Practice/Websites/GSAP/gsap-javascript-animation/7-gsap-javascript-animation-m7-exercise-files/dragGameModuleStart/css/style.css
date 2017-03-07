@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    src: url(fonts/Asap-Regular.ttf);
+    font-family: ASAP;
+}
+
+@font-face {
+    src: url(fonts/Asap-Bold.ttf);
+    font-family: ASAP_BOLD;
+    font-weight: bold;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.content-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 1280px;
+    height: 720px;
+    margin: auto;
+    display: flex;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    background-image: url("../image/desktop_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.background img {
+    width: 100%;
+}
+
+.background .title {
+    position: relative;
+    align-self: center;
+    font-family: ASAP_BOLD;
+    font-size: 3em;
+    margin: 30px 0 60px 0;
+    color: #88ce02;
+}
+
+.background .instruction{
+    position: absolute;
+    left: 85px;
+    width: 250px;
+    text-align: center;
+    top: -30px;
+}
+
+.gameBoard {
+    position: relative;
+    width: 850px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.leftOutside {
+    position: absolute;
+    left: 25px;
+}
+
+.leftInside {
+    position: absolute;
+    left: 255px;
+}
+
+.rightOutside {
+    position: absolute;
+    right: 25px;
+}
+
+.rightInside {
+    position: absolute;
+    right: 255px;
+}
+
+.firstRowTopPos {
+    top: 20px;
+}
+
+.secondRowTopPos {
+    top: 165px;
+}
+
+.thirdRowTopPos {
+    top: 330px;
+}
+
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(91,91,91, .5);
+    top: 0;
+    left: 0;
+    font-family: ASAP_BOLD;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal span{
+    font-size: 5em;
+    color: #88ce02;
+    margin: auto;
+}
+
+.tryAgain {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #ce0400;
+    font-size: 5em;
+    font-family: ASAP_BOLD;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.correct {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #88ce02;
+    font-size: 5em;
+    font-family: ASAP_BOLD;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media screen and (max-width: 870px) {
+    .gameBoard {
+        width: 750px;
+    }
+
+    .leftInside {
+        left: 205px;
+    }
+
+    .rightInside {
+        right: 205px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .background .instruction{
+        left: 45px;
+    }
+
+    .gameBoard {
+        width: 650px;
+    }
+
+    .leftInside {
+        left: 180px;
+    }
+
+    .rightInside {
+        right: 180px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .background .instruction{
+        left: -55px;
+    }
+
+    .gameBoard {
+        width: 450px;
+    }
+
+    .leftInside {
+        display: none;
+    }
+
+    .rightInside {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .gameBoard {
+        width: 350px;
+    }
+
+    .background .title {
+        font-size: 2em;
+
+    }
+
+    .leftOutside {
+        left: 20px;
+    }
+
+    .rightOutside {
+        right: 20px;
+    }
+}
