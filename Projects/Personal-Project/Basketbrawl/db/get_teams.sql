@@ -1,1 +1,1 @@
-SELECT * FROM teams;
+SELECT logo FROM teams;

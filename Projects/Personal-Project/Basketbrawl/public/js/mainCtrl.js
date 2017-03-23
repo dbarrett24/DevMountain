@@ -19,12 +19,45 @@ angular.module("brawlApp").controller("mainCtrl", function($scope, mainService){
             $scope.teamSlug = $scope.teams.slug;
         });
    
-    
+    function init (){
+        function getData(){
+            mainService.getPlayerStats().then(function(playerStats){
+                var arron = playerStats.player_season_stats;
+
+                mainService.getRosters().then(function(rosters){
+                    var rosters = rosters.players;
+                    console.log("arron afflalo", arron);
+                    console.log(rosters);
+                    
+                    for(var i = 0; i < playerStats.length; i++){
+                        if(playerStats[i].player_id === rosters[0].id){
+                            console.log("found it");
+                        }
+                        else{
+                            console.log("not found");
+                        }
+                    }
+                    
+                });
+            });
+        }
+        getData();
+    }
+   init();
    
-        mainService.getPlayersStats().then(function(playerStats){
-            $scope.playerStats = playerStats.player_season_stats;
-            // console.log($scope.playerStats);
-        });
+        // mainService.getPlayerStats().then(function(playerStats){
+        //     $scope.playerStats = playerStats.player_season_stats;
+        // });
+
+        
+        // mainService.getRosters().then(function(rosters){
+        // $scope.rosters = rosters.players;
+       
+        // });
+   
+        
+        // console.log("player", $scope.playerStats);
+        // console.log("roster", $scope.rosters);
 
 
         //*************DataBase************ */

@@ -19,32 +19,34 @@ angular.module("brawlApp").service("mainService", function($http){
         })
     }
 
-   this.getPlayersStats = function(){
+   this.getPlayerStats = function(){
         return $http ({
             method: 'GET',
-            url:"https://api.stattleship.com/basketball/nba/player_season_stats",
+            url:"https://api.stattleship.com/basketball/nba/player_season_stats/?season_id=" + "nba-2016-2017" + "&player_id="  + "nba-arron-afflalo",
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : 'Token token=46dbbda6eb33623048fb17208f8bea1c',
                 'Accept': 'application/vnd.stattleship.com; version=1'
             }
         }).then(function(response){
-            console.log(response.data)
+            // console.log(response.data)
             return response.data;
         })
     }
 
-    this.getRosters = function(teamSlug){
+
+
+    this.getRosters = function(){
         return $http ({
             method: 'GET',
-            url:"https://api.stattleship.com/basketball/nba/rosters/?team_id=" + teamSlug,
+            url:"https://api.stattleship.com/basketball/nba/rosters/?team_id=" + "nba-ny",
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : 'Token token=46dbbda6eb33623048fb17208f8bea1c',
                 'Accept': 'application/vnd.stattleship.com; version=1'
             }
         }).then(function(response){
-            console.log(response.data)
+            // console.log(response.data)
             return response.data;
         })
     }
@@ -83,7 +85,7 @@ angular.module("brawlApp").service("mainService", function($http){
             method: 'GET',
             url:"../JSON/teams.json",
         }).then(function(response){
-            console.log(response.data)
+            // console.log(response.data)
             return response.data
         })
     }

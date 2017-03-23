@@ -4,6 +4,13 @@
     bottom: -30px;
 
 }
+.headings-dir{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: -40px;
+    
+}
 .player-header-1{
     width: 100%;
     height: 30vh;
