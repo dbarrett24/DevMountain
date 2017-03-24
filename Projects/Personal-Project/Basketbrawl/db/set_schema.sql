@@ -49,8 +49,10 @@ CREATE TABLE players (
     headImg text,
     restImg text,
     winImg text,
-    loseImg text
+    loseImg text,
+    points text
+    
 );
 
-INSERT INTO players(teamId, name, headImg, restImg, winImg, loseImg) VALUES
+INSERT INTO players(teamId, name, headImg, restImg, winImg, loseImg, points) VALUES
 (1, 'Carmelo', 'a','a','a','a');

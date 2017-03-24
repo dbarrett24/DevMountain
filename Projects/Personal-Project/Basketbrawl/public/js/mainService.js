@@ -22,7 +22,7 @@ angular.module("brawlApp").service("mainService", function($http){
    this.getPlayerStats = function(){
         return $http ({
             method: 'GET',
-            url:"https://api.stattleship.com/basketball/nba/player_season_stats/?season_id=" + "nba-2016-2017" + "&player_id="  + "nba-arron-afflalo",
+            url:"https://api.stattleship.com/basketball/nba/player_season_stats/?season_id=" + "nba-2015-2016" + "&player_id="  + "nba-arron-afflalo",
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : 'Token token=46dbbda6eb33623048fb17208f8bea1c',
