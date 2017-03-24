@@ -36,10 +36,10 @@ angular.module("brawlApp").service("mainService", function($http){
 
 
 
-    this.getRosters = function(){
+    this.getRosters = function(teamSlug){
         return $http ({
             method: 'GET',
-            url:"https://api.stattleship.com/basketball/nba/rosters/?team_id=" + "nba-ny",
+            url:"https://api.stattleship.com/basketball/nba/rosters/?team_id=" + teamSlug,
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : 'Token token=46dbbda6eb33623048fb17208f8bea1c',
