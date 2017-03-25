@@ -15,6 +15,7 @@
     align-items: center;
     top: 232px;
 }*/
+
 .roster-wrapper{
     width: 100%;
     height: 100%;
@@ -41,6 +42,16 @@ th{
     margin-left: 30px;
     text-align: left;
 }
+
+.teamLogo {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    max-width: 100px;
+    min-width: 100px;
+    margin-left: 50px;
+}
+
 .player-data-area{
     width: 100%;
     height: 33vh;
@@ -56,11 +67,25 @@ th{
     margin: 3px;
     font-family: "Roboto-Regular";
 }
-
+.player-with-stats:hover{
+    width: 100%;
+    height: 38px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px;
+    font-family: "Roboto-Regular";
+}
 table{
     width: 100%;
     height: 100%;
     /*border: 1px solid black;*/
+}
+tbody{
+    width: 100%;
+    height: 100%;
+    
 }
 tr{
     width: auto;
@@ -68,14 +93,18 @@ tr{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
+
+
 td{
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    max-width: 50px;
+    min-width: 50px;
     height: 100%;
-    padding: 3px;
+
+    /*padding: 3px;*/
     text-align: center;
+    align-items: center;
     white-space: nowrap;
     /*border: 1px solid black;*/
 }
@@ -87,9 +116,12 @@ td{
 .button-pos{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     padding: 3px;
     text-align: right;
-
+    width: 100%;
+    margin-left: 20px;
+        
 }
 
 
@@ -101,7 +133,6 @@ td{
     padding: 7px 13px;
     color: #fff;
     font-family: "Roboto-Regular";
-    
 }
 .add-player-btn2{
     width: 105px;

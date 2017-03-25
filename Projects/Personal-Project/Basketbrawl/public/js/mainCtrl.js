@@ -7,43 +7,43 @@ angular.module("brawlApp").controller("mainCtrl", function($scope, mainService){
     
     console.log("mainCtrl");
  
-        mainService.getPlayers().then(function(players){
-            $scope.players = players.players;
-            // console.log($scope.players);
-        });
+        // mainService.getPlayers().then(function(players){
+        //     $scope.players = players.players;
+        //     // console.log($scope.players);
+        // });
   
 
-        mainService.getTeams().then(function(teams){
-            $scope.teams = teams;
-            // console.log($scope.teams)
-            $scope.teamSlug = $scope.teams.slug;
-        });
+        // mainService.getTeams().then(function(teams){
+        //     $scope.teams = teams;
+        //     // console.log($scope.teams)
+        //     $scope.teamSlug = $scope.teams.slug;
+        // });
    
-    function init (){
-        function getData(){
-            mainService.getPlayerStats().then(function(playerStats){
-                var arron = playerStats.player_season_stats;
+//     function init (){
+//         function getData(){
+//             mainService.getPlayerStats().then(function(playerStats){
+//                 var arron = playerStats.player_season_stats;
 
-                mainService.getRosters().then(function(rosters){
-                    var rosters = rosters.players;
-                    console.log("arron afflalo", arron);
-                    console.log(rosters);
+//                 mainService.getRosters().then(function(rosters){
+//                     var rosters = rosters.players;
+//                     console.log("arron afflalo", arron);
+//                     console.log(rosters);
                     
-                    for(var i = 0; i < playerStats.length; i++){
-                        if(playerStats[i].player_id === rosters[0].id){
-                            console.log("found it");
-                        }
-                        else{
-                            console.log("not found");
-                        }
-                    }
+//                     for(var i = 0; i < playerStats.length; i++){
+//                         if(playerStats[i].player_id === rosters[0].id){
+//                             console.log("found it");
+//                         }
+//                         else{
+//                             console.log("not found");
+//                         }
+//                     }
                     
-                });
-            });
-        }
-        getData();
-    }
-   init();
+//                 });
+//             });
+//         }
+//         getData();
+//     }
+//    init();
    
         // mainService.getPlayerStats().then(function(playerStats){
         //     $scope.playerStats = playerStats.player_season_stats;

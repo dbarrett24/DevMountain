@@ -61,6 +61,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   
 }
 .player-portrait-2{
@@ -69,13 +70,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     
 }
-/*.team-logo-bg{
-    width: 100%;
+.team-logo-bg {
+    position: absolute;
     height: 100%;
-}*/
+    opacity: 0.3;
+    float: left;
+    z-index: -100;
+    
+}
 
-.roster-logo{
-
+.roster-logo img{
+    min-width: 70px;
+    max-width: 500px;
+    height: 100%;
 }

@@ -13,45 +13,45 @@ angular.module("brawlApp").controller("rosterCtrl", function($scope, mainService
 
     }
 
+
+    var url = $stateParams.teamId;
+    console.log(url);
+
+    $scope.getTeamInfo = function(url){
+        mainService.getDbData(url).then(function(response){
+            console.log("look at me", response);
+            $scope.selectedTeam = response;
+        });
+    }
+    $scope.getTeamInfo(url);
+    
 // Functions
     // GET DATA
-    $scope.getRosters = function(teamSlug){
-        mainService.getRosters(teamSlug).then(function(rosters){
-            $scope.rosters = rosters;
-            // console.log($scope.rosters);
-        });
-    };
+    // $scope.getRosters = function(teamSlug){
+    //     mainService.getRosters(teamSlug).then(function(rosters){
+    //         $scope.rosters = rosters;
+    //         // console.log($scope.rosters);
+    //     });
+    // };
     
         mainService.getTeams()
             .then(function(teamData){
                 $scope.teamData = teamData;
-                // console.log($scope.teams);
+                console.log("teamJSON", $scope.teamData);
 
                 var team = teamData.find(function(team){
-                    return team.slug === $stateParams.teamId;
+                    return team.name === $stateParams.teamId;
                 });
 
                 if(team) {
-                    $scope.teamSlug = team.slug;
-                    $scope.getRosters(team.slug);
+                    $scope.teamSlug = team.name;
+
                 } else {
-                    return 'nba-ny';
+                    return 'Atlanta Hawks';
                 }
 
-                return team.slug;
+                return team.name;
             })
-            .then(mainService.getRosters)
-            .then(function(teamRoster){
-               $scope.players = teamRoster.players;
-            });
-
-
-$scope.test = function(){
-    mainService.dbGetTeams().then(function(response){
-        // console.log(response);
-        $scope.testData = response[0];
-    })
-}
 
 
 });

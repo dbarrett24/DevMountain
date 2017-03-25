@@ -14,12 +14,14 @@
 }
 
 .card{
-    height: 48vh;
+    
+    height: 42vh;
     background: #C9C9C9;
     border-radius: 15px;
     margin: 10px 25px;
     text-align: center;
     transition: all .4s, ease-out;
+    padding-top: 40px;
 }
 .card:hover{
     text-align: center;
@@ -31,7 +33,7 @@
 }
 
 .card p{
-    font-size:48px;
+    font-size:2em;
     text-align: center;
     width: 100%;
     color: darkgray;
@@ -39,6 +41,7 @@
     opacity: .01;
     transition: all .4s ease-out;
     font-family: "Roboto-Regular";
+
 }
 a{
     text-decoration: none;
@@ -51,7 +54,8 @@ a{
     width: 90%;
     height: auto;
     margin: 0 auto;
-    padding-top: 95px;
+    
+    
 }
 
 a:focus{

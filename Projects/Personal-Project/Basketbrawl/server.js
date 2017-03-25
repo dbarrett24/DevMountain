@@ -29,6 +29,18 @@ app.get('/getLogo', function(req, res, next) {
     })
 });
 
+app.get('/getTeamInfo/:teamId', function(req, res, next) {
+    console.log(req.params.teamId);
+    db.get_specific_team([req.params.teamId], function(error, data) {
+        if(error) {
+            res.statusCode(500).json(error);
+        
+        }
+        else {
+            res.json(data);
+        }
+    })
+});
 
 
 

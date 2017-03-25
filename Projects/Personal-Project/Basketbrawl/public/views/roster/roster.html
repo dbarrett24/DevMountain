@@ -1,33 +1,38 @@
 
 <section ng-controller="rosterCtrl">
+    <!--directive-->
     <div class="roster-table-headings"></div>
-    
-<!--{{test1}}-->
     
     <section class="player-data-area"></section>
          
 
 
-            <div class="player-with-stats" ng-repeat="player in players">
+            <div class="player-with-stats" ng-repeat="player in selectedTeam">
             <table>
+                <tbody>
                 <tr>
-                    <td class="name1"><p>{{player.name}}</p></td>
-                    <td><img ng-src="{{teamData}}"></td>
-                    <td>{{player.position_abbreviation}}</td>
-                    <td>{{player.years_of_experience}}</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>12</td>
+                   
+                    <td class="name1"><p>{{player.playername}}</p></td>
+                    
+                
+                    <td class="teamLogo"><img ng-src={{teamData[$index].logo}} width="38px"></td>
+                    <td>{{player.position}}</td>
+                    <td>{{player.years}}</td>
+                    <td>{{player.mpg}}</td>
+                    <td>{{player.fgpct}}%</td>
+                    <td>{{player.threeptpct}}%</td>
+                    <td>{{player.rpg}}</td>
+                    <td>{{player.apg}}</td>
+                    <td>{{player.bpg}}</td>
+                    <td>{{player.stls}}</td>
+                    <td>{{player.ppg}}</td>
+                    <td>{{player.plusminus}}</td>
                     <td class="button-pos"><button class="add-player-btn" ng-click="test()">Add Player 1</button></td>
                     <td class="button-pos"><button class="add-player-btn2" ng-click="addRight()">Add Player 2</button></td>
                     
             
                 </tr>
+                </tbody>
             </table>
         </div>
     

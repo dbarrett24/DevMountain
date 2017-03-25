@@ -1,152 +1,212 @@
 [
   {
-    "name": "Hawks",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/hawks.svg",
+    "name": "Atlanta Hawks",
+    "shortname": "Hawks",
+    "city": "Atlanta",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/hawks.svg",
     "slug": "nba-atl"
   },
   {
-    "name": "76ers",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/sixers.svg",
+    "name": "Philadelphia 76ers",
+    "shortname": "76ers",
+    "city": "Philadelphia",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/sixers.svg",
     "slug": "nba-phi"
   },
   {
-    "name": "Bucks",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/bucks.svg",
+    "name": "Milwaukee Bucks",
+    "shortname": "Bucks",
+    "city": "Milwaukee",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/bucks.svg",
     "slug": "nba-mil"
   },
   {
-    "name": "Bulls",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/bulls.svg",
+    "name": "Chicago Bulls",
+    "shortname": "Bulls",
+    "city": "Chicago",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/bulls.svg",
     "slug": "nba-chi"
   },
   {
-    "name": "Cavs",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/cavs.svg",
+    "name": "Cleveland Cavaliers",
+    "shortname": "Cavaliers",
+    "city": "Cleveland",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/cavs.svg",
     "slug": "nba-cle"
   },
   {
-    "name": "Celtics",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/celtics.svg",
+    "name": "Boston Celtics",
+    "shortname": "Celtics",
+    "city": "Boston",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/celtics.svg",
     "slug": "nba-bos"
   },
   {
-    "name": "Clippers",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/clippers.svg",
+    "name": "LA Clippers",
+    "shortname": "Clippers",
+    "city": "Los Angeles",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/clippers.svg",
     "slug": "nba-lac"
   },
   {
-    "name": "Grizzlies",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/grizzlies.svg",
+    "name": "Memphis Grizzlies",
+    "shortname": "Grizzlies",
+    "city": "Memphis",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/grizzlies.svg",
     "slug": "nba-mem"
   },
   {
-    "name": "Heat",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/heat.svg",
+    "name": "Miami Heat",
+    "shortname": "Heat",
+    "city": "Miami",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/heat.svg",
     "slug": "nba-mia"
   },
   {
-    "name": "Hornets",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/hornets.svg",
+    "name": "Charlotte Hornets",
+    "shortname": "Hornets",
+    "city": "Charlotte",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/hornets.svg",
     "slug": "nba-cha"
   },
   {
-    "name": "Jazz",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/jazz.svg",
+    "name": "Utah Jazz",
+    "shortname": "Jazz",
+    "city": "Utah",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/jazz.svg",
     "slug": "nba-uta"
   },
   {
-    "name": "Kings",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/kings.svg",
+    "name": "Sacramento Kings",
+    "shortname": "Kings",
+    "city": "Sacramento",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/kings.svg",
     "slug": "nba-sac"
   },
   {
-    "name": "Knicks",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/knicks.svg",
+    "name": "New York Knicks",
+    "shortname": "Knicks",
+    "city": "Knicks",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/knicks.svg",
     "slug": "nba-ny"
   },
   {
-    "name": "Lakers",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/lakers.svg",
+    "name": "Los Angeles Lakers",
+    "shortname": "Lakers",
+    "city": "Los Angeles",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/lakers.svg",
     "slug": "nba-lal"
   },
   {
-    "name": "Magic",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/magic.svg",
+    "name": "Orlando Magic",
+    "shortname": "Magic",
+    "city": "Orlando",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/magic.svg",
     "slug": "nba-orl"
   },
   {
-    "name": "Mavs",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/mavs.svg",
+    "name": "Dallas Mavericks",
+    "shortname": "Mavericks",
+    "city": "Dallas",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/mavs.svg",
     "slug": "nba-dal"
   },
   {
-    "name": "Nets",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/nets.svg",
+    "name": "Brooklyn Nets",
+    "shortname": "Nets",
+    "city": "Brooklyn",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/nets.svg",
     "slug": "nba-bk"
   },
   {
-    "name": "Nuggets",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/nuggets.svg",
+    "name": "Denver Nuggets",
+    "shortname": "Nuggets",
+    "city": "Denver",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/nuggets.svg",
     "slug": "nba-den"
   },
   {
-    "name": "Pacers",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/pacers.svg",
+    "name": "Indiana Pacers",
+    "shortname": "Pacers",
+    "city": "Indiana",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/pacers.svg",
     "slug": "nba-ind"
   },
   {
-    "name": "Pelicans",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/pelicans.svg",
+    "name": "New Orleans Pelicans",
+    "shortname": "Pelicans",
+    "city": "New Orleans",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/pelicans.svg",
     "slug": "nba-no"
   },
   {
-    "name": "Pistons",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/pistons.svg",
+    "name": "Detroit Pistons",
+    "shortname": "Pistons",
+    "city": "Detroit",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/pistons.svg",
     "slug": "nba-det"
   },
   {
-    "name": "Raptors",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/raptors.svg",
+    "name": "Toronto Raptors",
+    "shortname": "Raptors",
+    "city": "Toronto",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/raptors.svg",
     "slug": "nba-tor"
   },
   {
-    "name": "Rockets",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/rockets.svg",
+    "name": "Houston Rockets",
+    "shortname": "Rockets",
+    "city": "Houston",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/rockets.svg",
     "slug": "nba-hou"
   },
   {
-    "name": "Spurs",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/spurs.svg",
+    "name": "San Antonio Spurs",
+    "shortname": "Spurs",
+    "city": "San Antonio",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/spurs.svg",
     "slug": "nba-sa"
   },
   {
-    "name": "Suns",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/suns.svg",
+    "name": "Phoenix Suns",
+    "shortname": "Suns",
+    "city": "Phoenix",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/suns.svg",
     "slug": "nba-pho"
   },
   {
-    "name": "Thunder",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/thunder.svg",
+    "name": "Oklahoma City Thunder",
+    "shortname": "Thunder",
+    "city": "Oklahoma City",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/thunder.svg",
     "slug": "nba-okc"
   },
   {
-    "name": "T-wolves",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/wolves.svg",
+    "name": "Minnesota Timberwolves",
+    "shortname": "Timberwolves",
+    "city": "Minnesota",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/wolves.svg",
     "slug": "nba-min"
   },
   {
-    "name": "Warriors",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/warriors.svg",
+    "name": "Golden State Warriors",
+    "shortname": "Warriors",
+    "city": "Atlanta",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/warriors.svg",
     "slug": "nba-gs"
   },
   {
-    "name": "Blazers",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/trailblazers.svg",
+    "name": "Portland Trail Blazers",
+    "shortname": "Trail Blazers",
+    "city": "Atlanta",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/trailblazers.svg",
     "slug": "nba-por"
   },
   {
-    "name": "Wizards",
-    "logo": "../images/TeamLogos-Edited/Roster-Size/wizards.svg",
+    "name": "Washington Wizards",
+    "shortname": "Wizards",
+    "city": "Atlanta",
+    "logo": "../../images/TeamLogos-Edited/Roster-Size/wizards.svg",
     "slug": "nba-was"
   }
   
