@@ -4,7 +4,7 @@ angular.module("brawlApp").controller("team-choicesCtrl", function($scope, mainS
         $('.carousel-wrapper').slick({
             infinite: true,
             slidesToShow: 5,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             autoplay: true,
             autoplaySpeed: 3500
         });

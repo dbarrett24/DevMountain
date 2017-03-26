@@ -6,52 +6,54 @@ angular.module("brawlApp").controller("rosterCtrl", function($scope, mainService
     var rightPlayer = [];
     
 
-    $scope.addLeft = function(){
-        
-    }
-    $scope.addRight = function(){
-
-    }
-
-
+    //gets player information: names, stats, based on team-url
     var url = $stateParams.teamId;
-    console.log(url);
-
+    
+    
     $scope.getTeamInfo = function(url){
         mainService.getDbData(url).then(function(response){
-            console.log("look at me", response);
+            console.log("Player Stats of Selected Team", response);
             $scope.selectedTeam = response;
+            // return response;
+            
         });
     }
-    $scope.getTeamInfo(url);
+    var player = $scope.getTeamInfo(url);
+    // ---------------------------------------
+
+
+//Returns correct URL ending for what is team is selected.
+    mainService.getTeams()
+        .then(function(teamData){
+            $scope.teamData = teamData;
+            // console.log("teamJSON", $scope.teamData);
+            var team = teamData.find(function(team){
+                return team.name === $stateParams.teamId;
+            });
+            
+            if(team) {
+                $scope.teamSlug = team.name;
+                $scope.logo = team.logo;
+            } else {
+                return 'Atlanta Hawks';
+            }
+            return team.name;
+    });
+   
+//On click, display player image.
+
+    $scope.addPlayerLeft = function(player){
+        if(player.hasOwnProperty("headimg")){
+            return player[1].headImg;
+        }};
     
-// Functions
-    // GET DATA
-    // $scope.getRosters = function(teamSlug){
-    //     mainService.getRosters(teamSlug).then(function(rosters){
-    //         $scope.rosters = rosters;
-    //         // console.log($scope.rosters);
-    //     });
-    // };
     
-        mainService.getTeams()
-            .then(function(teamData){
-                $scope.teamData = teamData;
-                console.log("teamJSON", $scope.teamData);
 
-                var team = teamData.find(function(team){
-                    return team.name === $stateParams.teamId;
-                });
-
-                if(team) {
-                    $scope.teamSlug = team.name;
-
-                } else {
-                    return 'Atlanta Hawks';
-                }
-
-                return team.name;
-            })
+    // $scope.addPlayerRight = function(){
+        
+    //     return playerData;
+    // }
+    
 
 
 });

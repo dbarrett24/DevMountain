@@ -1,11 +1,16 @@
 
+.entire-table-wrapper{
+    position: relative;
+    width: 100%;
+}
+
 .roster-table{
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 38px;
     display: flex;
     align-items: center;
-    top: 232px;
+    
 }
 /*.roster-table-headings{
     position: fixed;
@@ -13,7 +18,7 @@
     height: 38px;
     display: flex;
     align-items: center;
-    top: 232px;
+    top: 600px;
 }*/
 
 .roster-wrapper{
@@ -24,16 +29,27 @@
     font-size: 14px;
     font-family: "Roboto-Regular";
 }
+
 th{
-    display: inline-block;
+    /*display: inline-block;
     width: 100%;
     height: 100%;
     padding: 12px 3px 3px 3px;
+    text-align: center;*/
+    /*border: 1px solid black;*/
+    display: flex;
+    max-width: 50px;
+    min-width: 50px;
+    height: 100%;
+
+    /*padding: 3px;*/
     text-align: center;
+    align-items: center;
+    white-space: nowrap;
     /*border: 1px solid black;*/
 }
 .name1-h{
-    padding: 12px 3px 3px 3px;
+    /*padding: 12px 3px 3px 3px;*/
     margin-left: 30px;
     text-align: left;
 }
@@ -133,6 +149,7 @@ td{
     padding: 7px 13px;
     color: #fff;
     font-family: "Roboto-Regular";
+    z-index: 100;
 }
 .add-player-btn2{
     width: 105px;
@@ -143,6 +160,7 @@ td{
     color: #fff;
     font-family: "Roboto-Regular";
     margin-right: 20px;
+    z-index: 100;
     
 }
 .add-player-btn:hover{
@@ -153,6 +171,7 @@ td{
     color: #fff;
     font-family: "Roboto-Regular";
     transform: scale(1.025);
+    cursor: pointer;
     
 }
 .add-player-btn2:hover{
@@ -164,6 +183,8 @@ td{
     font-family: "Roboto-Regular";
     margin-right: 20px;
     transform: scale(1.025);
+    cursor: pointer;
+
     
 }
 .add-player-btn:focus{
@@ -173,4 +194,26 @@ td{
 .add-player-btn2:focus{
     outline: none;
     
+}
+
+
+/*ANGULAR ANIMATIONS*/
+
+/*starting styles*/
+.player-with-stats.ng-enter{
+    transition: 0.30s ease-out all;
+    opacity: 0;
+    transform: translateX(50px);
+    
+}
+
+/*finishing styles*/
+.player-with-stats.ng-enter.ng-enter-active{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.player-with-stats.ng-enter-stagger{
+    transition-delay: 0.01s;
+    transition-duration: 0;
 }

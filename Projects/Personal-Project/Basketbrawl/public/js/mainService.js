@@ -60,7 +60,7 @@ this.getDbData = function(id){
         url: '/getTeamInfo/' + id
 
     }).then(function(response){
-        console.log("hello" + response);
+        // console.log("hello" + response);
         return response.data;
     })
 }
@@ -85,7 +85,7 @@ this.dbGetTeams = function(){
             method: 'GET',
             url:"http://localhost:3000/getLogo",
         }).then(function(response){
-            console.log(response.data)
+            // console.log(response.data)
             return response.data
         })
     }

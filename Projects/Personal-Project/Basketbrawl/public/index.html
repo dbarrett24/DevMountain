@@ -23,6 +23,7 @@
 
         <link href="./views/team-choices/team-choices.css" rel="stylesheet">
         <link href="./views/roster/roster.css" rel="stylesheet">
+        <link href="./views/fight/fight.css" rel="stylesheet">
 
     </head>
     <body ng-controller="mainCtrl">
@@ -34,11 +35,9 @@
     
 <!--***********************************-->
     <main role="main">
-        <!--<ui-view></ui-view>-->
         <ui-view name="home-header"></ui-view>
         <ui-view name="player-header"></ui-view>
-
-        
+        <ui-view></ui-view>
 
         <ui-view name="team-choices"></ui-view>
         <ui-view name="roster"></ui-view>
@@ -50,9 +49,10 @@
     </main>
 
 <!--Angular, JQuery, Bootstrap, UI-Router-->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+        <script src="./js/libraries/angular-animate.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
         
@@ -72,6 +72,7 @@
 
         <script src="./views/team-choices/team-choicesCtrl.js"></script>
         <script src="./views/roster/rosterCtrl.js"></script>
+        
 
 
     </body>

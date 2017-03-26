@@ -69,7 +69,7 @@ CREATE TABLE players (
 -- INSERT INTO players(teamId, name, headImg, restImg, winImg, loseImg, points) VALUES
 -- (1, 'Carmelo', 'a','a','a','a');
 
-INSERT INTO players (playerName, team, position, years, mpg, fgPct, threePtPct, ftPct, ppg, rpg, apg, bpg, stls, plusMinus, headImg, restImg, winImg, loseImg)
+INSERT INTO players (playername, team, position, years, mpg, fgPct, threePtPct, ftPct, ppg, rpg, apg, bpg, stls, plusMinus, headImg, restImg, winImg, loseImg)
     VALUES 
         ('Kent Bazemore','Atlanta Hawks','SF','4','18.6','42.3','34.6','69.1','7.3','2.7','1.5','0.4','1.2','-2.1','https://s3-us-west-2.amazonaws.com/basketbrawl/Player+heads/Hawks/KentBazemore.png','','',''),
         ('DeAndre Bembry','Atlanta Hawks','SF','0','9.6','47.6','0','42.9','2.8','1.4','0.7','0.1','0.2','-1.5','https://s3-us-west-2.amazonaws.com/basketbrawl/Player+heads/Hawks/DeAndreBembry.png','','',''),

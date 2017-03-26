@@ -17,17 +17,16 @@ db.set_schema(function(error, data){
     else console.log("All tables successfully reset");
 });
 
-app.get('/getLogo', function(req, res, next) {
-    db.get_teams(function(error, data) {
-        if(error) {
-            res.statusCode(500).json(error);
-        
-        }
-        else {
-            res.json(data);
-        }
-    })
-});
+// app.get('/getLogo', function(req, res, next) {
+//     db.get_teams(function(error, data) {
+//         if(error) {
+//             res.statusCode(500).json(error);
+//         }
+//         else {
+//             res.json(data);
+//         }
+//     })
+// });
 
 app.get('/getTeamInfo/:teamId', function(req, res, next) {
     console.log(req.params.teamId);

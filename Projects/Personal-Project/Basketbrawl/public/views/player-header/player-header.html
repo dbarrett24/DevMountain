@@ -1,10 +1,11 @@
-<header class="player-header-1" ng-controller="player-headerCtrl">
+<header class="player-header-1" ng-controller="mainCtrl">
     <img src="../../images/icons/Logo.png" class="logo-2">
+
     
     <section class="player-heads">
         <div class="portrait-wrapper-1">
             <div class="team-logo-bg">
-                <div ng-style="{'background-image':'url({{teamData[5].logo}})'}"></div>
+                <img class="leftBG" ng-src="{{teamData[1].logo}}" ></img>
             </div>
             <div class="player-portrait-1">
                 <img ng-src="{{}}">
@@ -13,12 +14,13 @@
         </div>
 
         <div class="roster-logo">
-            <img ng-src="{{teamData[0].logo}}">
+            <img ng-src="{{logo}}">
+            <!--<div ><button class="ready-btn" ng-click="">READY</button></div>-->
         </div>
 
         <div class="portrait-wrapper-2">
             <div class="team-logo-bg">
-                <img ng-src="{{teamData[5].logo}}">
+                <img class="rightBG" ng-src="{{teamData[5].logo}}">
             </div>
             <div class="player-portrait-2">
                 <img ng-src="{{}}">
@@ -28,6 +30,5 @@
     </section>
 
 <nav-dir class="nav-dir"></nav-dir>
-<table-head-dir class="headings-dir"></table-head-dir>
 </header>
 

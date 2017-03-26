@@ -4,6 +4,7 @@ footer{
     background: #072840;
     position: fixed;
     bottom: 0px;
+    z-index: 200;
 }
 .footer-inner{
     font-family: "Roboto-Regular";

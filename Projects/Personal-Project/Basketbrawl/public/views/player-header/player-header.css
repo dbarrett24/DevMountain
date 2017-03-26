@@ -1,22 +1,22 @@
+
 .nav-dir{
     width: 100%;
     position: absolute;
     bottom: -30px;
-
+    z-index: 5;
 }
 .headings-dir{
     position: absolute;
     width: 100%;
     height: 30px;
     bottom: -40px;
-    
 }
 .player-header-1{
     width: 100%;
     height: 30vh;
     background: url("../../images/Background/black background.png");
     position: fixed;
-    
+    z-index: 1;
 }
 .logo-2{
     width: 7%;
@@ -74,16 +74,70 @@
     
 }
 .team-logo-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: auto;
+}
+.leftBG {
     position: absolute;
-    height: 100%;
-    opacity: 0.3;
-    float: left;
-    z-index: -100;
-    
+    height: 600px;
+    opacity: 0.05;
+    left: 0;
+    right: 0;
+    /*transform: rotate(12deg);*/
+    margin: 0 auto; 
+}
+.rightBG {
+    position: absolute;
+    height: 600px;
+    opacity: 0.05;
+    left: 0;
+    right: 0;
+    /*transform: rotate(12deg);*/
+    margin: 0 auto; 
 }
 
 .roster-logo img{
-    min-width: 70px;
-    max-width: 500px;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: auto;
 }
+.roster-logo div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+}
+.ready-btn{
+    width: 105px;
+    border-radius: 20px;
+    background-color: #f7ad45;
+    border: none;
+    padding: 10px 13px;
+    color: #fff;
+    font-family: "Roboto-Regular";
+    margin: 0 auto;
+}
+.ready-btn:hover{
+    border-radius: 20px;
+    background-color: #FF9800;
+    border: none;
+    padding: 10px 13px;
+    color: #fff;
+    font-family: "Roboto-Regular";
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+.ready-btn:focus{
+    outline: none;
+    
+}
+/*active (player mode)*/
+
+
+
