@@ -79,6 +79,7 @@ this.getDbData = function(id){
 
 
 
+
 //******************DATABASE****************** */
 this.dbGetTeams = function(){
     return $http ({

@@ -29,6 +29,7 @@
     color: gray;
     font-family: "Roboto-Regular";
     font-size: 26px;
+    position: absolute;
 }
 .player-heads{
     width: 100%;
@@ -38,6 +39,7 @@
     align-items: center;
     position: absolute;
     bottom: 20px;
+    overflow: hidden;
 }
 .portrait-wrapper-1{
     width: 100%;
@@ -73,12 +75,26 @@
     position: relative;
     
 }
+.player-portrait-1 img{
+    height: 250px;
+    position: relative;
+    align-self: flex-end;
+    opacity: 0.9;
+}
+.player-portrait-2 img{
+    height: 250px;
+    position: relative;
+    align-self: flex-end;
+    opacity: 0.9;
+}
 .team-logo-bg {
+    clear: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     height: auto;
+    
 }
 .leftBG {
     position: absolute;

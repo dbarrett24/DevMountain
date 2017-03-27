@@ -10,7 +10,6 @@
     height: 38px;
     display: flex;
     align-items: center;
-    
 }
 /*.roster-table-headings{
     position: fixed;
@@ -140,7 +139,6 @@ td{
         
 }
 
-
 .add-player-btn{
     width: 105px;
     border-radius: 15px;
@@ -149,7 +147,7 @@ td{
     padding: 7px 13px;
     color: #fff;
     font-family: "Roboto-Regular";
-    z-index: 100;
+
 }
 .add-player-btn2{
     width: 105px;
@@ -160,7 +158,7 @@ td{
     color: #fff;
     font-family: "Roboto-Regular";
     margin-right: 20px;
-    z-index: 100;
+
     
 }
 .add-player-btn:hover{

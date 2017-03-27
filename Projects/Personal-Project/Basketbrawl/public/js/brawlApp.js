@@ -45,8 +45,7 @@ angular.module("brawlApp", ["ui.router", "ngAnimate"])
                 views:{
                     'player-header':{
                         templateUrl: "../views/player-header/player-header.html",
-                        controller: "player-headerCtrl"
-                        
+                        controller: "rosterCtrl"
                     },
                     'roster':{
                         templateUrl: "../views/roster/roster.html",
@@ -58,35 +57,35 @@ angular.module("brawlApp", ["ui.router", "ngAnimate"])
             .state('fight-view', {
                 url: '/fight',
                 views:{
-                    'player-header':{
-                        templateUrl: "../views/player-header/player-header.html",
-                        controller: "player-headerCtrl"
+                    // 'player-header':{
+                    //     templateUrl: "../views/player-header/player-header.html",
+                    //     controller: "player-headerCtrl"
                         
-                    },
+                    // },
                     'fight':{
-                        templateUrl: '../views/fight/fight.html',
+                        templateUrl: "../views/fight/fight.html",
                         controller: "fightCtrl"
                         
                     }
                 }
             })
             .state('results-view', {
-                url: '/results/',
+                url: '/results',
                 views:{
-                    'player-header':{
-                        templateUrl: "../views/player-header/player-header.html",
-                        controller: "player-headerCtrl"
+                    // 'player-header':{
+                    //     templateUrl: "../views/player-header/player-header.html",
+                    //     controller: "player-headerCtrl"
                         
-                    },
+                    // },
                     'results':{
-                        templateUrl: '../views/results/results.html',
-                        controller: "resultsCtrl"
+                        templateUrl: "../views/results/results.html",
+                        controller: "fightCtrl"
                         
                     }
                 }
             })
-            // .state('fight', {
-            //     url: '/fight/:id',
+            // .state('fight-view', {
+            //     url: '/fight',
             //     parent: 'roster',
             //     templateUrl: '../views/fight/fight.html'
             // })
