@@ -3,9 +3,12 @@ angular.module("brawlApp").controller("rosterCtrl", function($scope, $timeout, m
     // console.log("rosterCtrl");
     
     $scope.leftPlayer = {};
-    // $scope.leftPlayer = $scope.$parent.share.leftPlayer;
-    $scope.rightPlayer = [];
+    $scope.rightPlayer = {};
 
+    // $scope.main.leftShow = true;
+    // $scope.main.leftShow = !$scope.leftShow;
+    
+        
     mainService.getDbData(url).then(function(response){
         // console.log("Player Stats of Selected Team", response);
         $scope.currentTeamData = response;
@@ -13,16 +16,24 @@ angular.module("brawlApp").controller("rosterCtrl", function($scope, $timeout, m
     });
 
     $scope.addPlayerLeft = function(player) {
-        // for (var i = 0; i < leftPlayer.length; i++) {
-        //     if (leftPlayer[i] === player) 
-        // }
-        // if ($scope.leftPlayer)
-        $scope.leftPlayer = player;
-        console.log($scope.leftPlayer);
-        // $scope.$parent.share.leftPlayer = player;
-        // $timeout($scope.$parent.$apply.bind($scope.$parent), 0);
-        // $timeout($scope.$apply.bind($scope), 0);
+       
+        $scope.main.leftPlayer = player;
+        console.log($scope.main.leftPlayer);
+        $(".selectPlayer").css("display", "none");
+        $(".player-information-wrapper-left").css("display", "inline-block");
+       
     }
+
+
+    $scope.addPlayerRight = function(player) {
+      
+        $scope.main.rightPlayer = player;
+        console.log($scope.main.rightPlayer);
+        $(".selectPlayer").css("display", "none");
+        $(".player-information-wrapper-right").css("display", "inline-block");
+      
+    }
+
 
 // *********************************************************
     //gets player information: names, stats, based on team-url

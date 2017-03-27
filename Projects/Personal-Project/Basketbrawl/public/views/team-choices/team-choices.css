@@ -14,7 +14,6 @@
 }
 
 .card{
-    
     height: 40vh;
     background: #C9C9C9;
     border-radius: 15px;
@@ -43,7 +42,6 @@
     opacity: .01;
     transition: all .4s ease-out;
     font-family: "Roboto-Regular";
-
 }
 a{
     text-decoration: none;
@@ -56,11 +54,8 @@ a{
     width: 90%;
     height: auto;
     margin: 0 auto;
-    
-    
 }
 
 a:focus{
     outline: none;
 }
-

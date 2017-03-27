@@ -8,7 +8,7 @@ angular.module("brawlApp").controller("mainCtrl", function($scope, mainService){
 //    $scope.opened = true;
 //     $scope.toggle = () => $scope.opened = !$scope.opened;
 
-
+        
 
         //*************DataBase************ */
         
