@@ -1,0 +1,9 @@
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    color: white;
+    font-family: arial;
+}
