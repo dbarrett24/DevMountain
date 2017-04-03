@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Angular Lecture</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="style.css" rel="stylesheet">-->
+    </head>
+    <body ng-app="app">
+        <div ng-controller="mainCtrl">
+            <h3>ONE WAY BINDING</h3>
+            {{test}}
+            <button ng-click="updateTest()">Update Test</button>
+
+            <h3>TWO WAY BINDING</h3>
+            <input ng-model="two">
+            {{two}}
+
+            <h3>REPEAT FOR LISTS</h3>
+            <ul>
+                <li ng-repeat="topping in toppings track by $index">{{topping}}</li>
+            </ul>
+
+            <h3>REPEAT 2</h3>
+            <input ng-model="newTopping">
+            <button ng-click="addTopping()">Add</button>
+
+            <h3>FILTER</h3>
+            <input ng-model="carFilter">
+            <div ng-repeat="car in cars | filter: carFilter">{{car.make}}, {{car.model}}</div>
+            
+            <h3>FILTER 2</h3>
+            <input ng-model="filterObj.make">
+            <div ng-repeat="car in cars | filter: filterObj">{{car.make}}, {{car.model}}</div>
+            
+            <h3>SHOW, HIDE, IF</h3>
+            <div ng-show="isAwesome">You are awesome!</div>
+            <div ng-hide="isAwesome">You are NOT awesome! Sorry, psh.. chump!</div>
+            <div ng-if="isAwesome">IF you are awesome!</div>
+        </div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="mainController.js"></script>
+    </body>
+</html>
