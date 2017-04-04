@@ -9,13 +9,16 @@
     </head>
     <body ng-controller="mainCtrl">
     
-        <nav-dir></nav-dir>
+        <nav-dir name="name" last-name="Barrett" alert-name="whatsMyName()"></nav-dir>
         
 
         <div>
             {{test}}<br>
             {{test1}}
         </div>
+
+        <widget-dir first-name="name"></widget-dir>
+
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
