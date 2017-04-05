@@ -1,0 +1,17 @@
+<html ng-app="apiApp">
+	<body ng-controller="mainCtrl">
+		
+		<ul ng-repeat="ship in starshipArray[0]">
+			<li>{{ship.name}}</li>
+			<li>{{ship.hyperdrive_rating}}</li>
+			<li>{{ship.model}}</li>
+			<li>{{ship.passengers}}</li>
+			<li>{{ship.cost_in_credits}}</li>
+		</ul>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+		<script src="app.js"></script>
+		<script src="controller.js"></script>
+		<script src="service.js"></script>
+	</body>
+</html>

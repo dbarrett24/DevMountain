@@ -1,0 +1,22 @@
+<html ng-app="app">
+	<head>
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body ng-controller="mainCtrl">
+		<h1>app6 - routing</h1>
+
+		<nav>
+			<a ui-sref="home">Home</a>
+			<a ui-sref="signup">Sign Up</a>
+			<a ui-sref="details">Details</a>
+		</nav>
+		<ui-view></ui-view>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+		
+		<script src="app.js"></script>
+		<script src="controller.js"></script>
+		<script src="service.js"></script>
+	</body>
+</html>

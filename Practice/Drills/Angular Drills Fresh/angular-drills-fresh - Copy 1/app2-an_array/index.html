@@ -1,0 +1,23 @@
+<html ng-app="arrayApp">
+	<head>
+		<link rel="stylesheet" href="style.css"></link>
+	</head>
+	<body ng-controller="mainCtrl">
+		
+		<input type="text" placeholder="Search Employees" ng-model="filter">
+
+		<ul ng-repeat="person in data | filter: filter">
+			<li>{{person.name}}</li>
+			<li>{{person.email}}</li>
+			<li>{{person.dateEmployed}}</li>
+			<li>{{person.phone}}</li>
+		</ul>
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controller.js"></script>
+		<script src="service.js"></script>
+	</body>
+</html>
