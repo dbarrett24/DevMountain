@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
         <link href="./js/directives/lessonHider.css" rel="stylesheet">
+        <link href="./js/directives/button/buttonstyle.css" rel="stylesheet">
     </head>
     <body ng-controller="lessonCtrl">
         <div class="wrapper">
@@ -20,6 +21,7 @@
                     day-alert="announceDay(lesson, day)",
                     toggle="">
                 </lesson-hider>
+                <button-dir></button-dir>
             </ul>
         </div>
 
@@ -31,5 +33,6 @@
 
     <!--//directives-->
     <script src="./js/directives/lessonHider.js"></script>
+    <script src="./js/directives/button/button.js"></script>
     </body>
 </html>

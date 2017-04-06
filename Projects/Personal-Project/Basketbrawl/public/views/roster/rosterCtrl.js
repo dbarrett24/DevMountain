@@ -53,6 +53,7 @@ angular.module("brawlApp").controller("rosterCtrl", function($scope, $timeout, m
 
 //Returns correct URL ending for what is team is selected.
     mainService.getTeams()
+    
         .then(function(teamData){
             $scope.teamData = teamData;
             // console.log("teamJSON", $scope.teamData);
