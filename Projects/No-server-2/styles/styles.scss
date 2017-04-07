@@ -1,0 +1,20 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import 'variables';
+@import 'home';
+@import 'navDir';
+@import 'plxMountain';
+
+html{
+    font-family: $mainFont;
+    color: $font-color;
+    font-size: 1em;
+    font-weight: 300;
+    
+}
+
+a{
+    text-decoration: none;
+    color: $font-color; 
+}
+
