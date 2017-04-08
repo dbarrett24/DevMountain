@@ -4,7 +4,12 @@
 // @media (max-width: 1176px){
 
 // }
-
+.nav-dir{
+    position: absolute;
+    top: 0;
+    
+    
+}
 .home-banner{
     // position: absolute;
     // background-color: #00c4c5;
@@ -17,17 +22,32 @@
     // opacity: .8;
     background: linear-gradient(180deg,#6e4593 25%, orange 85%);
     left: 0;
-    height: 100%;
-    position: absolute;
+    height: 800px;
+    position: relative;
     top: 0px;
-    width: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
     
+    .title-wrapper{
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+        width: 100vw;
+    }
     .tagline-wrapper{
+        line-height: 1.08em;
         h1{
             font-size: $tagline-size;
+            
         }
             // #6e4593 120deg
             // #00c4cc
+    }
+    .section-2{
+        width: 100vw;
+        height: 400px;
+        z-index: 60;
     }
 }
 
