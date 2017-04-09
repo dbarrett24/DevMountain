@@ -23,26 +23,18 @@ angular.module('app').controller('mainCtrl', function ($scope, mainService) {
 });
 'use strict';
 
-angular.module('app').directive('navDir', function () {
-    return {
-        restrict: 'E',
-        templateUrl: '../views/directives/navDir.html'
-    };
-});
-'use strict';
-
-angular.module('app').directive('parallaxMountains', function () {
-    return {
-        restrict: 'E',
-        templateUrl: '../views/directives/plxMountain.html'
-    };
-});
-'use strict';
-
 angular.module('app').service('mainService', function ($http) {
 
     // *****************************
     this.test1 = "Service is working";
     // *****************************
+});
+'use strict';
+
+angular.module('app').directive('navDir', function () {
+    return {
+        restrict: 'E',
+        templateUrl: '../views/directives/navDir.html'
+    };
 });
 //# sourceMappingURL=bundle.js.map

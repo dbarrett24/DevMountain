@@ -55,3 +55,5 @@ gulp.task('build', ['build-css', 'build-js', 'build-views'], function() {
 gulp.task('watch', function() {
     return gulp.watch(['./index.html','./partials/*.html', './styles/*.*css', 'views/**/*.html', './js/**/*.js'], ['build']);
 });
+
+gulp.task('start', ['build', 'watch']);
