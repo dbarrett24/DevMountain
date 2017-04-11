@@ -3,12 +3,20 @@
 </div>
 
 <h4>Latest Chats:</h4>
+
 <div class="jumbotron">
 
-	<form ng-submit="addMessage(newMessage)">
+	<h4>Type your userName</h4>
+	<form ng-submit="addMessage(userName, newMessage)">
+		<input ng-model="userName" type="text" placeholder="Enter your name">
+
+	
+	<h4>Send a message:</h4>
+
 		<input ng-model="newMessage" type="text" placeholder="Hello!">
 	</form>
+<hr>
 
-	<div ng-repeat="message in messages track by $index">{{ message }}</div>
+	<div ng-repeat="message in messages track by $index">{{message.userImage}} {{message.userName}} {{ message.message }} : {{ message.time | date: 'h:mm a'}}</div>
 
 </div>
