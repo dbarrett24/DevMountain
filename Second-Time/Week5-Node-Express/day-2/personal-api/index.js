@@ -18,12 +18,16 @@ app.get('/hobbies/:type', mainCtrl.getHobbyType);
 app.get('/family/', mainCtrl.getFamily);
 app.get('/family/:gender', mainCtrl.getFamilyGender);
 app.get('/restaurants/', mainCtrl.getRestaurants);
-app.get('/restaurants/:name', mainCtrl.getRestaurantName);
+// app.get('/restaurants/:name', mainCtrl.getRestaurantName);
 
 //Writable Endpoints (PUT Endpoints);
-app.put('/name', mainCtrl.putName);
-app.put('/location', mainCtrl.putLocation);
-app.post('/hobbies', mainCtrl.postHobby);
-app.post('/occupations', mainCtrl.postOccupation);
-app.post('/family', mainCtrl.postFamily);
-app.post('/restaurants', mainCtrl.postFamily);
+// app.put('/name', mainCtrl.putName);
+// app.put('/location', mainCtrl.putLocation);
+// app.post('/hobbies', mainCtrl.postHobby);
+// app.post('/occupations', mainCtrl.postOccupation);
+// app.post('/family', mainCtrl.postFamily);
+// app.post('/restaurants', mainCtrl.postFamily);
+
+app.listen(3000, function(){
+    console.log('listening on port 3000');
+});

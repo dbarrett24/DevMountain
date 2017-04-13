@@ -14,7 +14,8 @@ module.exports = {
         res.status(200).send(user.occupations);
     },
     getLatestOccupation: function(req, res, next) {
-        res.status(200).send(user.occupations.length - 1);
+        res.status(200).send(user.occupations.slice());
+
     },
     getHobbies: function(req, res, next) {
         res.status(200).send(user.hobbies);
@@ -24,9 +25,11 @@ module.exports = {
         var listOfHobbies = user.hobbies;
         for(var i = 0; i < listOfHobbies.length; i++){
             if(listOfHobbies[i].type === req.params.type){
-                results.push(listOfHobbies);
+                results.push(listOfHobbies[i]);
             }
         }
+        res.status(200).send(results);
+        
         //USING FILTER METHOD
         // results = listOfHobbies.filter(function(){
         //     if(listOfHobbies[i].type === req.params.type){
@@ -34,10 +37,10 @@ module.exports = {
         //     }
         // });
         
-        res.status(200).send(results);
     },
     getFamily: function(req, res, next) {
         var results = [];
+        // console.log(typeof(req.query));
         if(req.query.relation){
             for(var i = 0; i < user.family.length; i++){
                 if(user.family[i].relation === req.query.relation){
@@ -52,7 +55,7 @@ module.exports = {
     },
     getFamilyGender: function(req, res, next) {
         var results = [];
-        for(var i = 0; i < user.family.gender.length; i++){
+        for(var i = 0; i < user.family.length; i++){
             if(user.family[i].gender === req.params.gender){
                 results.push(user.family[i]);
             }
@@ -60,6 +63,8 @@ module.exports = {
         }
         res.status(200).send(results);
     },
+
+
     getRestaurants: function(req, res, next) {
         res.status(200).send(user.restaurants);
     },
