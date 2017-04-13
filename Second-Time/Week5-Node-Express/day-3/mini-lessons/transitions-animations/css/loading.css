@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+.load-outer-wrap {
+  width: 200px;
+  font-family: 'Lobster', cursive;
+  background: black;
+  position: relative;
+  left: 40%;
+  top: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.load {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 100%;
+  margin: 12px;
+  position: relative;
+  top: 0px;
+  right: 100px;
+  cursor: pointer;
+}
+
+@keyframes loading {
+  0% {right: 100px; background: red}
+  25% {background: blue; right: 75px}
+  50% {background: yellow; right: 100px}
+  75% {background: green; right: 120px}
+  100% {right: 100px; background: red}
+}
+
+.dot-1 {
+  animation: loading 3s linear infinite;
+}
+
+.dot-2 {
+  animation: loading 2s linear infinite;
+}
+
+.dot-3 {
+  animation: loading 4s linear infinite;
+}
+
+.dot-4 {
+  animation: loading 1.5s linear infinite;
+}
+
+.dot-5 {
+  animation: loading 3.5s linear infinite;
+}
+
+.dot-6 {
+  animation: loading 1.75s linear infinite;
+}
+.dot-7 {
+  animation: loading 2.75s linear infinite;
+}

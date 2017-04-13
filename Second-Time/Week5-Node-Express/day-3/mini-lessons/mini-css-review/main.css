@@ -1,0 +1,41 @@
+.green {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,121,0,.5);
+  position: relative;
+
+}
+
+.red {
+  width: 300px;
+  height: 200px;
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pink {
+  width: 200px;
+  height: 100px;
+  background: pink;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.block-stuff {
+  width: 100%;
+  height: 500px;
+  background: gray;
+  padding-top: 10px;
+}
+.same {
+  width: 50px;
+  height: 50px;
+  background: orange;
+  margin: 50px;
+  display: inline-block;
+}

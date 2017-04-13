@@ -1,0 +1,18 @@
+#outside {
+  width: 500px;
+  height: 500px;
+  background-color: purple;
+}
+.inside {
+
+}
+h1 {
+  font-size: 40px;
+}
+.inside h1 {
+  font-size: 60px;
+}
+.one {
+  color: blue;
+  position: absolute;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.singePlanet {
+  width: 200px;
+  cursor: pointer;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  transition: .3s;
+}
+.singePlanet:hover {
+  background: lightgray;
+}
+.homeBtn {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px black solid;
+  background: white;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  transition: .3s;
+}
+.homeBtn:hover {
+  background: lightgray;
+}
+.title {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+li {
+  font-size: 20px;
+  margin: 10px;
+}
+.backBtn {
+  margin: 20px 30px;
+  font-size: 20px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: .3s;
+  padding: 10px;
+}
+.backBtn:hover {
+  cursor: pointer;
+  background: lightgray;
+}

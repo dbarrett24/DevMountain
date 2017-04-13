@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    form 1
+    <form>
+      <!-- type:
+        text -> one-line text input field;
+        radio -> radio button, typically used for selecting one of many choices
+        submit -> submit button, will submit the form -->
+      <input type="text" name="" value="" placeholder='example text'><br>
+      <input type="radio" name="" value=""><br>
+      <input type="submit" name="" value="submit button"><br>
+      <input type="reset" name="" value="reset button"><br>
+
+    </form>
+    <br><br>form 2 <br><br>
+    <form action="index.html" method="post" autocomplete="on">
+      <!-- action -> the address (URL) where to submit the form
+      autocomplete -> should the browser autocomplete the form? default: on;
+      method -> the HTTP method used when submitting the form...GET/POST
+      name -> used to identify the form -->
+      <select name="sports">
+        <option value="baseball">baseball</option>
+        <option value="football">football</option>
+        <option value="soccer">soccer</option>
+        <option value="basketball">basketball</option>
+      </select>
+      <input type="submit">
+    </form>
+
+    <br><br>form 3<br><br>
+    <form>
+      <textarea name="name" rows="8" cols="50"></textarea><br>
+      <!-- rows = lines in text area
+      cols = width of text area -->
+      <input type="submit">
+    </form>
+    <br><br>form 4<br><br>
+    <form>
+      <input list='full-stack'>
+      <datalist id='full-stack'>
+        <option value='angular'/>
+        <option value='sql'/>
+        <option value='node'/>
+        <option value='express'/>
+      </datalist>
+      <button type="button" name="button">I am a button</button>
+    </form>
+
+    <br><br><br>
+    form 5
+    <br>
+
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+      0
+      <input type="range" name="a" value="50">
+      100 +
+      <input type="number" name="b" value="75">
+      =
+      <output name="result"></output><br>
+      <input type="submit">
+    </form>
+
+    <br><br>field 6 <br><br>
+
+    <form>
+      <fieldset>
+        <legend>Personal Info:</legend>
+        First name: <input type="text" name="" value="">
+        Last name: <input type="text" name="" value="">
+        Email: <input type="text" name="" value="">
+      </fieldset>
+    </form>
+
+    <br><br>field 7 <br><br>
+
+    <form>
+      <label for="yes">Yes</label>
+      <input type="radio" id='yes' value='yes' name='yes-no'>
+      <label for="no">No</label>
+      <input type="radio" id='no' value="no" name="yes-no">
+      <input type="submit">
+    </form>
+
+    <br><br> field 8 <br><br>
+
+    <form class="" action="index.html" method="post">
+      <select>
+        <optgroup label="Front-end">
+          <option value="HTML">HTML</option>
+          <option value="Angular">Angular</option>
+        </optgroup>
+        <optgroup label="Back-end">
+          <option value="Database">Database</option>
+          <option value="SQL">SQL</option>
+        </optgroup>
+      </select>
+      <input type="submit">
+    </form>
+
+    <br><br><br><br><br><br>
+
+  </body>
+</html>

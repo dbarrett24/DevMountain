@@ -1,0 +1,13 @@
+<div class="">
+  <h1>{{ singlePlanet.name }}</h1><hr>
+  <ul>
+    <li>Climate: {{ singlePlanet.climate }}</li>
+    <li>Population: {{ singlePlanet.population | number }}</li>
+    <li>Surface water: {{ singlePlanet.surface_water }} ulz</li>
+    <li>Terrain: {{ singlePlanet.terrain }}</li>
+    <li>Diameter: {{ singlePlanet.diameter }} tk</li>
+    <li>Gravity: {{ singlePlanet.gravity }}</li>
+    <li>Orbital Period: {{singlePlanet.orbital_period}} lons</li>
+  </ul>
+</div>
+<button class='backBtn' ui-sref='display' type="button" name="button">Back to da planetz</button> ui-sref='display'

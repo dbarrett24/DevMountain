@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+@keyframes color {
+    from {background-color: lightgreen}
+    to {background-color: maroon}
+}
+
+.ex-1 {
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    /*animation-name: color; added by jquery*/
+    animation-duration: 4s;
+}
+
+@keyframes percent {
+    0%   {background-color: red}
+    25%  {background-color: blue}
+    50%  {background-color: yellow}
+    100% {background-color: grey}
+}
+
+.ex-2 {
+    margin: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: red;
+    /*animation-name: percent;*/
+    animation-duration: 4s;
+    /*animation-iteration-count: 2;*/
+    /*animation-iteration-count: infinite;*/
+}
+
+@keyframes direction {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:400px; top:0px;}
+    50%  {background-color:blue; left:300px; top:150px;}
+    75%  {background-color:green; left:0px; top:250px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+.ex-3 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: relative;
+    /*animation-name: direction;*/
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    /*animation-direction: reverse;*/
+    /*animation-direction: alternate;*/
+}

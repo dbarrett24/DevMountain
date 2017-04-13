@@ -1,0 +1,12 @@
+<h1>Star Wars planets:</h1>
+
+<section ng-repeat='planet in planets'>
+
+  <h3>{{planet.name}}</h3>
+
+  <div ui-sref='details({ planetname: planet.name })' class="singePlanet">{{planet.name}} details</div>
+  <p> ui-sref='details( { planetname: {{planet.name}} } )' </p>
+
+  <hr>
+
+</section>

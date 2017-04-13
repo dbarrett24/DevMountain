@@ -1,0 +1,100 @@
+.cart-wrap {
+  width: 500px;
+  height: 500px;
+  background: black;
+  margin: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-one {
+  width: 34px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 334px;
+  left: 169px;
+  transition: 3s;
+  transition-delay: 1s;
+}
+
+
+.line-two {
+  width: 5px;
+  height: 34px;
+  background: white;
+  position: absolute;
+  top: 319px;
+  left: 183px;
+  transition: 3s;
+  transition-delay: 1s;
+}
+
+.line-three {
+  width: 34px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 334px;
+  left: 319px;
+  transition: 3s;
+  transition-delay: 1s;
+}
+
+
+.line-four {
+  width: 5px;
+  height: 34px;
+  background: white;
+  position: absolute;
+  top: 319px;
+  left: 333px;
+  transition: 3s;
+  transition-delay: 1s;
+}
+
+.line-five {
+  width: 50px;;
+  height: 8px;
+  border-radius: 25px;
+  background: black;
+  position: absolute;
+  top: 257px;
+  right: 44px;
+  transition: 1s;
+  transition-delay: 1s;
+}
+
+.line-six {
+  width: 70px;;
+  height: 8px;
+  border-radius: 25px;
+  background: black;
+  position: absolute;
+  top: 285px;
+  right: 25px;
+  transition: 1s;
+  transition-delay: 1s;
+}
+
+.line-seven {
+  width: 90px;
+  height: 8px;
+  border-radius: 25px;
+  background: black;
+  position: absolute;
+  top: 308px;
+  right: 5px;
+  transition: 1s;
+  transition-delay: 1s;
+}
+
+.bike {
+  color: white;
+  position: absolute;
+  top: 186px;
+  right: 136px;
+  transition: 2s;
+}

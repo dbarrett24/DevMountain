@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  background: black;
+  color: white;
+}
+
+p {
+font-family: 'Lato', sans-serif;
+font-size: 30px;
+margin: 40px;
+position: relative;
+z-index: 10;
+background: transparent;
+}
+
+.blue {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  position: relative;
+  z-index: 0;
+}
+.red {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+
+  z-index: 1;
+}
+.green {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  z-index: 2;
+}
+.orbit-wrap {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.orb {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  border-radius: 100%;
+  position: relative;
+  left: 200px;
+  z-index: 3;
+  background: url('http://www.iconarchive.com/download/i78695/zairaam/bumpy-planets/01-sun.ico') no-repeat center;
+  background-size: contain;
+}
+
+.orbit {
+  animation-name: orbit;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: yellow;
+  position: absolute;
+  top: 70px;
+  left: -70px;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  background: url('http://www.pngall.com/wp-content/uploads/2016/06/Earth.png') no-repeat center;
+  background-size: contain;
+}
+.orbit2 {
+  animation-name: orbit2;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: orange;
+  position: absolute;
+  top: 70px;
+  left: -70px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;;
+  animation-delay: 1s;
+}
+@keyframes orbit {
+  0% {top: 70px; left: 130px; z-index: 4;}
+  49% {top: 7px; left: 330px; z-index: 4;}
+  50% {top: 7px; left: 330px; z-index: 2;}
+  100% {top: 70px; left: 130px; z-index: 2;}
+}
+@keyframes orbit2 {
+  0% {top: 0px; left: 130px; z-index: 4;}
+  49% {top: 70px; left: 330px; z-index: 4;}
+  50% {top: 70px; left: 330px; z-index: 2;}
+  100% {top: 0px; left: 130px; z-index: 2;}
+}
+
+.arrow-wrap {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background: orange;
+}
+.one {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: url('http://www.freeiconspng.com/uploads/target-icon-30.png') no-repeat center;
+  background-size: contain;
+  transform: rotateY(60deg);
+  text-align: center;
+  font-size: 50px;
+  color: brown;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  right: 100px;
+  top: 0px;
+  z-index: 6;
+}
+.two {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: url('http://www.freeiconspng.com/uploads/target-icon-30.png') no-repeat center;
+  background-size: contain;
+  transform: rotateY(60deg);
+  text-align: center;
+  font-size: 50px;
+  color: brown;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  right: 150px;
+  top: 0px;
+  z-index: 6;
+}
+.three {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: url('http://www.freeiconspng.com/uploads/target-icon-30.png') no-repeat center;
+  background-size: contain;
+  transform: rotateY(60deg);
+  text-align: center;
+  font-size: 50px;
+  color: brown;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  right: 200px;
+  top: 0px;
+  z-index: 2;
+}
+.four {
+  width: 200px;
+  height: 200px;
+  border-radius: 0px 0px 0px 10px;
+  background: url('http://www.freeiconspng.com/uploads/target-icon-30.png') no-repeat;
+  background-size: 100%;
+  background-position: -98px;
+  transform: rotateY(60deg);
+  text-align: center;
+  font-size: 50px;
+  color: brown;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  right: 150px;
+  top: 0px;
+  z-index: 6;
+}
+.arrow {
+  width: 400px;
+  height: 100px;
+  background: url('http://roguearrow.com/ecommerce/wp-content/uploads/sites/3/2014/12/RA_Arrow.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: 46px;
+  right: 875px;
+  z-index: 5;
+  transition: .5s linear;
+}

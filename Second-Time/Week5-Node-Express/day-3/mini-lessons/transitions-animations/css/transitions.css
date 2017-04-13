@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+.t-1 {
+  width: 200px;
+  height: 200px;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  color: white;
+  background: blue;
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: width, height;
+  transition: 2s;
+  /*transition-delay: 2s;*/
+  /*transition: 2s, transform 4s;*/
+  /*transition-timing-function: ease-in-out;*/
+
+}
+
+.t-1:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
