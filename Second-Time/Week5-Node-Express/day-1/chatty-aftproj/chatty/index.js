@@ -17,7 +17,7 @@ app.get('/messages', function (req, res, next) {
 
 app.post('/messages', (req, res, next)=>{
   console.log(req.body);
-  messages.push({ message: req.body.message, time: new Date, userImage: 'http://devutpol.com/tf/return-preview/img/testimonial/3.jpg', userName: req.body.userName});
+  messages.push({ message: req.body.message, time: new Date, userImage: 'http://devutpol.com/tf/return-preview/img/testimonial/3.jpg', userName: req.body.message.userName});
   res.status(200).json({ messages: messages }); //you MUST include this line to get a response from the server.
 });
 
