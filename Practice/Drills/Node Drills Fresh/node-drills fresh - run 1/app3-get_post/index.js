@@ -6,7 +6,13 @@ var app = express();
 app.use(bodyParser.json());
 
 
-
+app.get('/item', function(req, res, next){
+	res.status(200).send(items);
+})
+app.post('/', function(req, res, next){
+	items.push(req.body);
+	res.status(200).send(items);
+})
 
 
 
