@@ -1,6 +1,6 @@
 var users = [{
-        name: 'p',
-        password: 'p',
+        name: 'Preston McNeil',
+        password: 'password1',
         friends: ['Lindsey Mayer', 'Terri Ruff']
     },
     {

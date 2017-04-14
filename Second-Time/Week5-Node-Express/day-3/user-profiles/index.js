@@ -30,6 +30,7 @@ app.use(express.static(__dirname + '/public'));
 
     //get
 app.get('/api/profiles', profileCtrl.getFriends);
+
     //post
 app.post('/api/login', userCtrl.login);
 

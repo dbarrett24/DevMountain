@@ -19,6 +19,9 @@ angular.module('userProfiles')
       return $http({
         method: 'GET',
         url: '/api/profiles'
+      }).then(function(response){
+        console.log(response.data);
+        return response.data;
       })
     };
   
