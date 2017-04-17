@@ -1,12 +1,10 @@
 {
   "name": "library",
-  "description": "",
-  "main": "app.js",
+  "version": "0.0.0",
   "authors": [
-    "dbarrett24 <dbarrett24@gmail.com>"
+    "Jonathan Mills <jonathanfmills@gmail.com>"
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/dbarrett24/DevMountain",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,7 +13,23 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0"
-  }
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0"
+  },
+    "overrides": {
+        "bootstrap": {
+            "main": [
+                "dist/js/bootstrap.js",
+                "dist/css/bootstrap.css",
+                "less/bootstrap.less"
+            ]
+        },
+        "font-awesome": {
+            "main": [
+                "less/font-awesome.less",
+                "css/font-awesome.min.css",
+                "scss/font-awesome.scss"
+            ]
+        }
+    }
 }
