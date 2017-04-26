@@ -7,10 +7,6 @@ angular.module('assessment').controller('productDetailsCtrl', function($scope, s
             $scope.details = response;
             console.log($scope.details)
 
-            for(var i = 0; i < $scope.details.length; i++){
-                if($scope.details[i].id == $stateParams.id){
-                }
-            }
         })
     }
     $scope.getItemDetails(Url);

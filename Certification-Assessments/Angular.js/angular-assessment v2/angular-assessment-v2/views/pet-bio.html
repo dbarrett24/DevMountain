@@ -1,0 +1,18 @@
+<div class="pet-grid__item  grid__item one-half large--one-third" >
+
+    <!--pet Image-->
+    <a class="pet-grid__pet">
+        <img class="pet-grid__img"  sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="" src="{{vm.pet.image}}">
+    </a>
+
+    <!--pet Meta-->
+    <div class="pet-grid__meta">
+        <!-- pet Name -->
+        <h3 class="pet-grid__name"><a>{{vm.pet.name}}</a></h3>
+        <!--pet Breed-->
+        <h4 class="pet-grid__sub">{{vm.pet.breed}}</h4>
+
+        <!--pet Age-->
+        <div class="pet-grid__price">{{vm.pet.age}}</div>
+    </div>
+</div>

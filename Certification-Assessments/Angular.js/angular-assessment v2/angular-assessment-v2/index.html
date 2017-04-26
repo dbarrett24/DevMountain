@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="assessment">
+<head>
+    <meta charset="UTF-8">
+    <title>Front End Assessment</title>
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body>
+<!--This div wraps the entire page-->
+    <div class="site-wrapper">
+        <!--Here is your header with the navigation nested inside -->
+        <header class="site-header" role="banner">
+            <div class="container">
+                <nav class="site-nav">
+                    <ul class="primary-nav">
+                        <li>
+                            <a ui-sref="pets">Pets</a>
+                        </li>
+                        <li>
+                            <a>Blog</a>
+                        </li>
+                        <li>
+                            <a>About</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <button class="hamburger toggle-nav js-toggle-nav" ng-click="showNav">
+                    <span class="hamburger-box"><span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+            </div>
+        </header>
+        <!--This is the main wrapper -->
+        <main class="site-main" role="main">
+
+
+
+        </main>
+        </div>
+
+
+<!--ADD ALL YOUR SCRIPTS HERE -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+</body>
+</html>
