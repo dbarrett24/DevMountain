@@ -18,6 +18,15 @@ angular.module('app').controller('mainCtrl', function ($scope, mainService) {
 "use strict";
 'use strict';
 
+angular.module('app').directive('navDir', function () {
+    return {
+        restrict: 'E',
+        // template: '<p>Hey</p>'
+        templateUrl: '../../views/directives/nav-dir.html'
+    };
+});
+'use strict';
+
 angular.module('app').service('mainService', function ($http) {
     // *****************************
     this.test = "Controller & Service are working";
