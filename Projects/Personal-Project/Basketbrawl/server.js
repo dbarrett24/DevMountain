@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.static('./public'));
 
 var config = require('./config.js');
-var db = massive.connectSync({connectionString : config.elephantSQL})
+var db = massive.connectSync({connectionString : config.elephantSQL});
 
 app.set('db', db);
 db.set_schema(function(error, data){
@@ -52,6 +52,6 @@ app.get('/getTeamInfo/:teamId', function(req, res, next) {
 
 
 app.listen(config.port, function(){
-    console.log('connected on port 3000');
+    console.log('connected on port ', config.port);
 });
 
