@@ -10,7 +10,7 @@ angular.module('app', ['ui.router']).config(function($stateProvider, $urlRouterP
             templateUrl: '../views/pets.html',
             controller: 'mainCtrl'
         })
-        .state('pet', {
+        .state('pet-details', {
             url: '/pets/:id',
             templateUrl: '../views/pets.html',
             controller: 'mainCtrl'
