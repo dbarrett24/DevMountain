@@ -1,7 +1,7 @@
         <!--Product Image-->
         <!--Product Image click collapse the image-->
         <a class="product-grid__product" >
-            <img ng-src="{{product.image}}" class="product-grid__img"   sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="Image of {{product.name}}">
+            <img ng-src="{{product.image}}" class="product-grid__img"   sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="Image of {{product.title}}">
         </a>
         <a class="product-grid__product">
             show image
@@ -11,11 +11,11 @@
         <div class="product-grid__meta">
             <!--Title click Should redirect to the product-details section. remember to pass along the product id so you can make an api call
         to get the specific product details-->
-            <h3 class="product-grid__name"><a>{{product.title}}</a></h3>
+            <h3 class="product-grid__name" ng-click="getProduct({{product.id}})"><a ui-sref="productDetails({id: '{{product.id}}' })">{{product.title}}</a></h3>
             
             <!--Product Description-->
             <h4 class="product-grid__sub">{{product.desc}}</h4>
 
             <!--Product Price-->
-            <div class="product-grid__price">{{product.price}}</div>
+            <div class="product-grid__price">{{product.price | currency}}</div>
         </div>

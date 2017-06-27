@@ -1,0 +1,23 @@
+{
+  "name": "node-assessment-in-dev",
+  "version": "1.0.0",
+  "description": "### Setup",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevMountain/node-assessment-in-dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevMountain/node-assessment-in-dev/issues"
+  },
+  "homepage": "https://github.com/DevMountain/node-assessment-in-dev#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "body-parser": "^1.17.1"
+  }
+}

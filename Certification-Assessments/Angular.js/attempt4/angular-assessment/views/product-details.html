@@ -2,17 +2,18 @@
 
     <!--Product Image-->
     <a class="product-grid__product">
-        <img class="product-grid__img"  sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="">
+        <img ng-src="{{productDetails.image}}" class="product-grid__img"  sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="Image of {{productDetails.title}}">
     </a>
 
     <!--Product Meta-->
     <div class="product-grid__meta">
         <!-- Tittle-->
-        <h3 class="product-grid__name"><a><!--Title--></a></h3>
+        <h3 class="product-grid__name"><a>{{productDetails.title}}</a></h3>
         <!--Product Description-->
-        <h4 class="product-grid__sub"><!--Desc--></h4>
+        <h4 class="product-grid__sub">{{productDetails.desc}}</h4>
 
         <!--Product Price-->
-        <div class="product-grid__price"><!--Price--></div>
+        <div class="product-grid__price">{{productDetails.price | currency}}</div>
     </div>
 </div>
+

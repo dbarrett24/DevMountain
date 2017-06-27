@@ -1,0 +1,33 @@
+{
+  "name": "node-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "users.js",
+  "directories": {
+    "test": "test"
+  },
+  "ava": {
+    "files": [
+      "test/*.js"
+    ]
+  },
+  "scripts": {
+    "test": "ava --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ava": "^0.18.1",
+    "body-parser": "^1.16.0",
+    "express": "^4.15.2",
+    "immutable": "^3.8.1",
+    "lodash": "^4.17.4",
+    "sinon": "^1.17.7",
+    "supertest": "^3.0.0",
+    "supertest-as-promised": "^4.0.2"
+  },
+  "repository": {
+    "url": "https://github.com/DevMountain/node-assessment"
+  }
+}

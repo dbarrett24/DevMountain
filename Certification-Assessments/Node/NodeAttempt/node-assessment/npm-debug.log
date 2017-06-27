@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\NodeJS\\node.exe',
+1 verbose cli   'D:\\Program Files\\NodeJS\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'config',
+1 verbose cli   'get',
+1 verbose cli   'prefix' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.4
+4 verbose stack Error: Cannot find module 'bl'
+4 verbose stack     at Function.Module._resolveFilename (module.js:469:15)
+4 verbose stack     at Function.Module._load (module.js:417:25)
+4 verbose stack     at Module.require (module.js:497:17)
+4 verbose stack     at require (internal/module.js:20:19)
+4 verbose stack     at Object.<anonymous> (D:\Program Files\NodeJS\node_modules\npm\node_modules\request\request.js:9:10)
+4 verbose stack     at Module._compile (module.js:570:32)
+4 verbose stack     at Object.Module._extensions..js (module.js:579:10)
+4 verbose stack     at Module.load (module.js:487:32)
+4 verbose stack     at tryModuleLoad (module.js:446:12)
+4 verbose stack     at Function.Module._load (module.js:438:3)
+5 verbose cwd c:\Users\dbarr\DevMountain\DevMountain\Certification-Assessments\Node\NodeAttempt\node-assessment
+6 error Windows_NT 10.0.14393
+7 error argv "D:\\Program Files\\NodeJS\\node.exe" "D:\\Program Files\\NodeJS\\node_modules\\npm\\bin\\npm-cli.js" "config" "get" "prefix"
+8 error node v6.9.4
+9 error npm  v3.10.10
+10 error code MODULE_NOT_FOUND
+11 error Cannot find module 'bl'
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]

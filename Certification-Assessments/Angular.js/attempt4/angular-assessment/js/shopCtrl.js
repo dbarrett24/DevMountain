@@ -14,3 +14,8 @@ $scope.getProducts = function(){
 $scope.getProducts();
 
 })
+
+    // for(var i = 0; i < mainService.products.length){
+        
+    // }
+

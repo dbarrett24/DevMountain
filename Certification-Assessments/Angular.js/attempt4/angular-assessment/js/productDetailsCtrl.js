@@ -5,12 +5,16 @@ angular.module('assessment').controller('productDetailsCtrl', function($scope, s
 
     $scope.getProduct = function(productId){
         shopService.getProducts(productId).then(function(response){
-            $scope.product = response;
-            console.log('====================================');
-            console.log($scope.products);
+            for(var i = 0; i < response.length; i++){
+                if(response[i].id === $stateParams.id){
+                    $scope.productDetails = response[i];
+                }
+            }
+            console.log('=========Product Details=============');
+            console.log($scope.productDetails);
             console.log('====================================');
         })
     }
-
+    $scope.getProduct();
 
 })

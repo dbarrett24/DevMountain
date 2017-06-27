@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "test": "ava --verbose"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "faker": "^3.1.0",
+    "lodash": "^4.14.1",
+    "supertest": "^2.0.0",
+    "supertest-as-promised": "^3.2.0"
+  },
+  "dependencies": {
+  }
+}

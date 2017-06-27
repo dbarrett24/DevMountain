@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./styles/app.css">
 </head>
 <body ng-controller="shopCtrl">
-   <p>{{test}}</p> 
+   <!--<p>{{test}}</p>-->
 
 
 <!--This div wraps the entire page-->
@@ -15,6 +15,8 @@
         <header class="site-header" role="banner">
             <div class="container">
               <!--Insert Logo directive here -->
+            <logo></logo>
+
                 <nav class="site-nav">
                     <ul class="primary-nav">
                        <li><a ui-sref='home'>Home</a></li>
@@ -49,6 +51,7 @@
 <script src="./js/shopService.js"></script>
 <script src="./js/productDetailsCtrl.js"></script>
 <script src="./js/productTmpl.js"></script>
+<script src="./js/logo.js"></script>
 
 
 
