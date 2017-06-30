@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 //Endpoints
 app.get('/api/users', usersCtrl.getAllUsers);
-app.get('/api/users', usersCtrl.getUsersUnder40);
+// app.get('/api/users?age=40', usersCtrl.getUsersByAgeLimit);
 
 
 
