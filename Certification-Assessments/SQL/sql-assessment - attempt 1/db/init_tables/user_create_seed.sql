@@ -12,9 +12,9 @@ DROP TABLE IF EXISTS users CASCADE;
 -- email  should be a string
 
 CREATE TABLE IF NOT EXISTS users (
-  id --(add datatype and/or table contraint),
-  name --(add datatype and/or table contraint),
-  email --(add datatype and/or table contraint)
+  user_id serial primary key,
+  name varchar(250),
+  email varchar(250)
 );
 
 -- === INSERT STATEMENT ===============
@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS users (
 -- Complete the first part of the insert statement below. The values below need to be inserted into the 'users' table.
 
 
+INSERT INTO users (name, email)
 VALUES
 ('John Smith', 'john@smith.com'),
 ('Dave Davis', 'dave@davis.com'),

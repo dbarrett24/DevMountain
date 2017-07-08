@@ -5,19 +5,20 @@ const express = require('express')
 
 const mainCtrl = require('./mainCtrl');
 
-const app = express();
+const app = module.exports = express();
 
 app.use(bodyParser.json())
 app.use(cors());
 
 // You need to complete the information below to connect
 // to the assessbox database on your postgres server.
+
 massive({
-  host: //host,
-  port: //port,
-  database: //database,
-  user: //user,
-  password: //password
+  host: 'localhost',
+  port: 5432,
+  database: 'accessbox',
+  user: 'postgres',
+  password: 'sflung2012588'
 }).then( db => {
   app.set('db', db);
 
@@ -31,9 +32,18 @@ massive({
 
 })
 
-
 // ===== Build enpoints below ============
-
+app.get('/api/users', mainCtrl.getAllUsers);
+app.get('/api/vehicles', mainCtrl.getAllVehicles);
+app.post('/api/users', mainCtrl.addUser);
+app.post('/api/vehicles', mainCtrl.addVehicle);
+app.get('/api/user/:userId/vehiclecount', mainCtrl.countOfCarsById);
+app.get('/api/user/:userId/vehicle', mainCtrl.vehiclesByUserId);
+app.get('/api/vehicle', mainCtrl.vehiclesByEmail);
+app.get('/api/newervehiclesbyyear/', mainCtrl.vehiclesByYear);
+app.put('/api/vehicle/:vehicleId/user/:userId', mainCtrl.updateVehicleOwner);
+app.delete('/api/user/:userId/vehicle/:vehicleId', mainCtrl.removeOwnership);
+app.delete('/api/vehicle/:vehicleId', mainCtrl.deleteVehicleById);
 
 
 
