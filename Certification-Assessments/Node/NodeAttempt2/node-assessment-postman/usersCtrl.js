@@ -52,15 +52,12 @@ module.exports = {
     getUserById: function(req, res, next){
         var id = req.params.id;
         console.log(id);
-
         for(var i = 0; i < userData.length; i++){
             if(userData[i].id == id){
-                return res.status(200).json(userData[i])
-            }
-            else{
-                return res.status(404).send('null');
+                return res.status(200).json(userData[i]);
             }
         }
+        return res.status(404).json(null);
     },
     getAdmins: function(req, res, next){
         var admins = [];
@@ -116,7 +113,7 @@ module.exports = {
         console.log(userId);
 
         for(var i = 0; i < userData.length; i++){
-            if(userData[i].id == userId){
+            if(userData[i].id === userId){
                 userData.splice(i, 1);
                 return res.status(200).send(userData);
             }

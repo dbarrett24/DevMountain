@@ -16,9 +16,9 @@ app.use(cors());
 massive({
   host: 'localhost',
   port: 5432,
-  database: 'accessbox',
+  database: 'assessbox',
   user: 'postgres',
-  password: 'sflung2012588'
+  password: 'postgres'
 }).then( db => {
   app.set('db', db);
 

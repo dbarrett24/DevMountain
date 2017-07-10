@@ -14,11 +14,11 @@ DROP TABLE IF EXISTS vehicles;
 -- owner_id   should be a number, foreign key
 
 CREATE TABLE IF NOT EXISTS vehicles (
-  vehicle_id SERIAL PRIMARY KEY,
+  id SERIAL PRIMARY KEY,
   make VARCHAR(250),
   model VARCHAR(250),
   year INTEGER,
-  owner_id INTEGER REFERENCES users(user_id)
+  owner_id INTEGER REFERENCES users(id)
 );
 
 -- === INSERT STATEMENT ===============

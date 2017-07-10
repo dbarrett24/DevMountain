@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS users CASCADE;
 -- email  should be a string
 
 CREATE TABLE IF NOT EXISTS users (
-  user_id serial primary key,
+  id serial primary key,
   name varchar(250),
   email varchar(250)
 );
